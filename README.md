@@ -4,7 +4,7 @@ for PDIS and  Master Degree Dissertation
 
 [Work Plan](https://docs.google.com/document/d/1EaRwrBXzREETSml68tNRoZJT4m01oLyG0Dr0M8CWDNk/edit)
 [Proposal](https://docs.google.com/document/d/10GmOw57nbpL4KeOVmFNBExa8AKJa6nUK6WsU4PIATa0/edit)
-[Abstract]()
+[Abstract](https://www.overleaf.com/7161869jfjtgcmbjzmh#/24680021/)
 [Presentaton]()
 
 
