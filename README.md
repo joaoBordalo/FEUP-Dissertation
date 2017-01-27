@@ -4,7 +4,8 @@ for PDIS and  Master Degree Dissertation
 
 [Work Plan](https://docs.google.com/document/d/1EaRwrBXzREETSml68tNRoZJT4m01oLyG0Dr0M8CWDNk/edit)
 [Proposal](https://docs.google.com/document/d/10GmOw57nbpL4KeOVmFNBExa8AKJa6nUK6WsU4PIATa0/edit)
-[Abstract](https://www.overleaf.com/7161869jfjtgcmbjzmh#/24680021/)
+[Abstract](
+)
 [Presentaton]()
 
 
@@ -34,3 +35,7 @@ Objetivos e resultados esperados:	Desenvolver estratégias de configuração aut
 *Kaushik Datta. Stencil computation optimization and auto-tuning on state-of-the-art multicore architectures. Proceeding SC '08 Proceedings of the 2008 ACM/IEEE conference on Supercomputing 
 
 *Davide Gadioli, Gianluca Palermo, Cristina Silvano, "Application Autotuning to Support Runtime Adaptivity in Multicore Architectures", Proceeding of XV International Conference on Systems, Architectures, Modeling, and Simulation, IC-SAMOS 2015 
+
+betweenness
+g++ *.cpp -fopenmp -std=gnu++11 -o test.out
+./teste.out
