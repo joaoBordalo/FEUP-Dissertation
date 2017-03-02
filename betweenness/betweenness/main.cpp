@@ -9,7 +9,6 @@
 #include <chrono>	//for time
 #include <cfloat>
 #include <cstring>
-
 #include <fstream>
 #include <iostream>
 #include <sstream>
@@ -35,7 +34,7 @@ void PrintUsage()
 	cout << endl;
 }
 
-void WriteResult(double * bw, int vertices) 
+void WriteResult(int * bw, int vertices) 
 {
 	ofstream file("result_betweenness.csv");
 
@@ -49,7 +48,7 @@ void WriteResult(double * bw, int vertices)
 
 int main(int argc, char* argv[])
 {
-	string fileName = "graph_facebook.csv";
+	string fileName = "graph_czech.csv";
 	int threads = omp_get_max_threads();
 	int version = 0;	//0=serial, 1=openmp
 	int startVertex = 0;
@@ -112,14 +111,15 @@ int main(int argc, char* argv[])
 	Betweenness *bb = new Betweenness(*graph);
 
 	auto start_time = std::chrono::high_resolution_clock::now();
-	double *ar;
+	int *ar;
 	if (version == 0)
 	{
 		ar = bb->Calculate(startVertex, endVertex);
 	}
 	else
-	{
+	{cout << "teste!"<<endl;
 		ar = bb->CalculateOpenMP(startVertex, endVertex, threads);
+		cout << "teste!!!!!!asdfa"<<endl;
 	}
 	
 	auto end_time = std::chrono::high_resolution_clock::now();

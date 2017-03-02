@@ -39,3 +39,98 @@ Objetivos e resultados esperados:	Desenvolver estratégias de configuração aut
 betweenness
 g++ *.cpp -fopenmp -std=gnu++11 -o test.out
 ./teste.out
+
+
+# Kremlin Fix
+
+When installing Kremlin, executing make in cmd at kremlin directory an error occured at 30% of Kremlin istalation:
+
+[ 30%] Building CXX object lib/Transforms/KremlinInstrument/CMakeFiles/KremlinInstrument.dir/KremlibDump.cpp.o
+In file included from /usr/include/fcntl.h:279:0,
+                 from /home/joaobordalo/Desktop/antarex/kremlin/instrument/llvm/llvm-3.6.1.src/lib/Transforms/KremlinInstrument/KremlibDump.cpp:11:
+In function ‘int open(const char*, int, ...)’,
+    inlined from ‘virtual bool {anonymous}::KremlibDump::runOnModule(llvm::Module&)’ at /home/joaobordalo/Desktop/antarex/kremlin/instrument/llvm/llvm-3.6.1.src/lib/Transforms/KremlinInstrument/KremlibDump.cpp:231:62:
+/usr/include/x86_64-linux-gnu/bits/fcntl2.h:50:26: error: call to ‘__open_missing_mode’ declared with attribute error: open with O_CREAT in second argument needs 3 arguments
+    __open_missing_mode ();
+                          ^
+
+The work around is:
+- add  #include <unistd.h>
+
+- in function  virtual bool runOnModule(Module &M):
+
+before: 
+virtual bool runOnModule(Module &M) {
+            LLVMTypes types(M.getContext());
+
+            std::string dump_filename = M.getModuleIdentifier();
+            dump_filename = dump_filename.substr(0,dump_filename.find_first_of("."));
+            dump_filename.append(".kdump");
+
+            log.debug() << "Writing kremlib calls to " << dump_filename << "\n";
+
+            int dump_fd = open(dump_filename.c_str(), O_RDWR | O_CREAT);
+            if (dump_fd == -1) {
+                LOG_FATAL() << "Could not open file: " << dump_filename << "\n";
+                LOG_FATAL() << "\t Reason: " << strerror(errno) << "\n";
+                return false;
+            }
+
+            // @note dump_fd is automatically closed when dum_raw_os is destroyed
+            raw_fd_ostream* dump_raw_os = new raw_fd_ostream(dump_fd, true, false);
+
+            std::set<std::string> kremlib_calls;
+            addKremlibCallsToSet(kremlib_calls);
+
+            // Now we'll look for calls to logRegionEntry/Exit and replace old region ID with mapped value
+            for(Module::iterator func = M.begin(), f_e = M.end(); func != f_e; ++func) {
+                processFunction(func,kremlib_calls, *dump_raw_os);
+            }
+
+            //dump_file.close();
+            delete dump_raw_os;
+
+            return false;
+        }// end runOnModule(...)
+
+        void getAnalysisUsage(AnalysisUsage &AU) const {
+            AU.setPreservesCFG();
+        }
+
+   after: (see bold to check what was added)
+virtual bool runOnModule(Module &M) {
+            LLVMTypes types(M.getContext());
+
+            std::string dump_filename = M.getModuleIdentifier();
+            dump_filename = dump_filename.substr(0,dump_filename.find_first_of("."));
+            dump_filename.append(".kdump");
+
+            log.debug() << "Writing kremlib calls to " << dump_filename << "\n";
+
+            int dump_fd = open(dump_filename.c_str(), O_RDWR | O_CREAT, **S_IWUSR**);
+            if (dump_fd == -1) {
+                LOG_FATAL() << "Could not open file: " << dump_filename << "\n";
+                LOG_FATAL() << "\t Reason: " << strerror(errno) << "\n";
+                return false;
+            }
+
+            // @note dump_fd is automatically closed when dum_raw_os is destroyed
+            raw_fd_ostream* dump_raw_os = new raw_fd_ostream(dump_fd, true, false);
+
+            std::set<std::string> kremlib_calls;
+            addKremlibCallsToSet(kremlib_calls);
+
+            // Now we'll look for calls to logRegionEntry/Exit and replace old region ID with mapped value
+            for(Module::iterator func = M.begin(), f_e = M.end(); func != f_e; ++func) {
+                processFunction(func,kremlib_calls, *dump_raw_os);
+            }
+
+            //dump_file.close();
+            delete dump_raw_os;
+
+            return false;
+        }// end runOnModule(...)
+
+        void getAnalysisUsage(AnalysisUsage &AU) const {
+            AU.setPreservesCFG();
+        }

@@ -52,7 +52,7 @@ void WeightedDirectedGraph::ReverseEdges()
 double WeightedDirectedGraph::NormalizeWeights()
 {
 	double maxWeight = 0;
-	for (size_t i = 0; i < vertices; i++)
+	/*for (size_t i = 0; i < vertices; i++)
 	{
 		for (list<Edge*>::iterator it = adj[i].begin(); it != adj[i].end(); it++)
 		{
@@ -62,14 +62,15 @@ double WeightedDirectedGraph::NormalizeWeights()
 				maxWeight = adjEdge->GetWeight();
 			}
 		}
-	}
+	}*/
 
 	for (size_t i = 0; i < vertices; i++)
 	{
 		for (list<Edge*>::iterator it = adj[i].begin(); it != adj[i].end(); it++)
 		{
 			Edge *adjEdge = *it;
-			adjEdge->SetWeight(adjEdge->GetWeight() / maxWeight);
+			//adjEdge->SetWeight(adjEdge->GetWeight()/maxWeight);
+			adjEdge->SetWeight(adjEdge->GetWeight()*1000);
 		}
 	}
 
