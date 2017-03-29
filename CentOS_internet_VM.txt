@@ -1,0 +1,14 @@
+--------
+Virtual Box  - CentOS 6.7
+--------
+
+- When downloading the image from osboxes.org, the image did not have network installed.
+
+ -> Create the file /etc/sysconfig/network-scripts/ifcfg-eth0 with the following contents:
+ 
+ DEVICE=eth0
+ BOOTPROTO=dhcp
+ ONBOOT=yes
+ 
+ -> Run the command (as root): ifup eth0
+ 
