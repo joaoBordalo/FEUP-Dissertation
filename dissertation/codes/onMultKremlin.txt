@@ -1,0 +1,174 @@
+[  0] TimeRed(Ideal)=70.96%, Cov=88.51%, SelfP=5.05, DOALL
+
+  LOOP matrixmul.cpp [ 148 -  181]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[  1] TimeRed(Ideal)=70.84%, Cov=88.32%, SelfP=5.05, DOALL
+
+  LOOP matrixmul.cpp [ 148 -  181]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[  2] TimeRed(Ideal)=57.01%, Cov=84.37%, SelfP=3.08, DOACROSS
+
+  LOOP matrixmul.cpp [ 148 -  179]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[  3] TimeRed(Ideal)=43.60%, Cov=99.30%, SelfP=1.78, TLP
+
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[  4] TimeRed(Ideal)=38.01%, Cov=79.81%, SelfP=1.91, ILP
+
+  BODY matrixmul.cpp [ 148 -  179]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[  5] TimeRed(Ideal)=16.69%, Cov=100.00%, SelfP=1.20, TLP
+
+  FUNC matrixmul.cpp [ 326 -  326]:        main called at file       root, line    0
+
+[  6] TimeRed(Ideal)=11.40%, Cov=87.41%, SelfP=1.15, TLP
+
+  BODY matrixmul.cpp [ 148 -  181]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[  7] TimeRed(Ideal)=3.37%, Cov=4.13%, SelfP=5.44, DOALL
+
+  LOOP matrixmul.cpp [ 149 -  161]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[  8] TimeRed(Ideal)=3.37%, Cov=4.13%, SelfP=5.44, DOALL
+
+  LOOP matrixmul.cpp [ 149 -  167]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[  9] TimeRed(Ideal)=3.34%, Cov=3.95%, SelfP=6.50, DOALL
+
+  LOOP matrixmul.cpp [ 149 -  161]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 10] TimeRed(Ideal)=3.34%, Cov=3.95%, SelfP=6.50, DOALL
+
+  LOOP matrixmul.cpp [ 149 -  167]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 11] TimeRed(Ideal)=2.28%, Cov=3.04%, SelfP=4.00, ILP
+
+  BODY matrixmul.cpp [ 149 -  161]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 12] TimeRed(Ideal)=2.28%, Cov=3.04%, SelfP=4.00, ILP
+
+  BODY matrixmul.cpp [ 149 -  167]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 13] TimeRed(Ideal)=0.36%, Cov=1.03%, SelfP=1.55, TLP
+
+  FUNC     chrono [   0 -    0]:  operator-<std::chrono::_V2::system_clock, called at file matrixmul.cpp, line  201
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 14] TimeRed(Ideal)=0.12%, Cov=0.58%, SelfP=1.27, TLP
+
+  FUNC     chrono [   0 -    0]:  operator-<long, called at file     chrono, line  652
+  FUNC     chrono [   0 -    0]:  operator-<std::chrono::_V2::system_clock, called at file matrixmul.cpp, line  201
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 15] TimeRed(Ideal)=0.00%, Cov=0.15%, SelfP=1.00, ILP
+
+  FUNC     chrono [   0 -    0]:  duration<long, called at file     chrono, line  162
+  FUNC     chrono [   0 -    0]:  __cast<long, called at file     chrono, line  203
+  FUNC     chrono [   0 -    0]:  duration_cast<std::chrono::duration<long, called at file matrixmul.cpp, line  202
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 16] TimeRed(Ideal)=0.00%, Cov=88.32%, SelfP=1.00, TLP
+
+  BODY matrixmul.cpp [ 148 -  181]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 17] TimeRed(Ideal)=0.00%, Cov=3.95%, SelfP=1.00, TLP
+
+  BODY matrixmul.cpp [ 149 -  161]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 18] TimeRed(Ideal)=0.00%, Cov=0.12%, SelfP=1.00, ILP
+
+  FUNC     chrono [ 278 -  278]:       count called at file     chrono, line  399
+  FUNC     chrono [   0 -    0]:  operator-<long, called at file     chrono, line  652
+  FUNC     chrono [   0 -    0]:  operator-<std::chrono::_V2::system_clock, called at file matrixmul.cpp, line  201
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 19] TimeRed(Ideal)=0.00%, Cov=0.15%, SelfP=1.00, ILP
+
+  FUNC     chrono [   0 -    0]:  duration<long, called at file     chrono, line  399
+  FUNC     chrono [   0 -    0]:  operator-<long, called at file     chrono, line  652
+  FUNC     chrono [   0 -    0]:  operator-<std::chrono::_V2::system_clock, called at file matrixmul.cpp, line  201
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 20] TimeRed(Ideal)=0.00%, Cov=0.12%, SelfP=1.00, ILP
+
+  FUNC     chrono [ 278 -  278]:       count called at file     chrono, line  163
+  FUNC     chrono [   0 -    0]:  __cast<long, called at file     chrono, line  203
+  FUNC     chrono [   0 -    0]:  duration_cast<std::chrono::duration<long, called at file matrixmul.cpp, line  202
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 21] TimeRed(Ideal)=0.00%, Cov=0.12%, SelfP=1.00, ILP
+
+  FUNC     chrono [ 278 -  278]:       count called at file matrixmul.cpp, line  202
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 22] TimeRed(Ideal)=0.00%, Cov=0.12%, SelfP=1.00, ILP
+
+  FUNC     chrono [ 568 -  568]:  time_since_epoch called at file     chrono, line  652
+  FUNC     chrono [   0 -    0]:  operator-<std::chrono::_V2::system_clock, called at file matrixmul.cpp, line  201
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 23] TimeRed(Ideal)=0.00%, Cov=3.95%, SelfP=1.00, TLP
+
+  BODY matrixmul.cpp [ 149 -  167]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 24] TimeRed(Ideal)=0.00%, Cov=0.73%, SelfP=1.00, TLP
+
+  FUNC     chrono [   0 -    0]:  __cast<long, called at file     chrono, line  203
+  FUNC     chrono [   0 -    0]:  duration_cast<std::chrono::duration<long, called at file matrixmul.cpp, line  202
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 25] TimeRed(Ideal)=0.00%, Cov=0.12%, SelfP=1.00, ILP
+
+  FUNC     chrono [ 278 -  278]:       count called at file     chrono, line  399
+  FUNC     chrono [   0 -    0]:  operator-<long, called at file     chrono, line  652
+  FUNC     chrono [   0 -    0]:  operator-<std::chrono::_V2::system_clock, called at file matrixmul.cpp, line  201
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 26] TimeRed(Ideal)=0.00%, Cov=0.88%, SelfP=1.00, TLP
+
+  FUNC     chrono [   0 -    0]:  duration_cast<std::chrono::duration<long, called at file matrixmul.cpp, line  202
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 27] TimeRed(Ideal)=0.00%, Cov=0.12%, SelfP=1.00, ILP
+
+  FUNC     chrono [ 568 -  568]:  time_since_epoch called at file     chrono, line  652
+  FUNC     chrono [   0 -    0]:  operator-<std::chrono::_V2::system_clock, called at file matrixmul.cpp, line  201
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+Total Region Count = 272
+Region Count (Total / Loop / Func / Body) = 28 / 7 / 14 / 7
+hamid@hamid:~/Downloads/Bordalo_new_code/matrixmul$ kremlin --planner=openmp
+Running: java -ea -classpath /home/hamid/kremlin/bin/kremlin.jar:/home/hamid/kremlin/bin/jopt-simple-4.3.jar Kremlin --planner=openmp
+Kremlin Planner Ver 0.2
+PlannerType = OpenMP
+Target : NumCore = 4, Overhead = 0,  Cache = 0 MB, BW= 0 MB/s
+Speedup: 3.65
+Serial  : 3289
+Parallel: 901
+
+[ 0] TimeRed(4)=66.38%, TimeRed(Ideal)=70.96%, Cov=88.51%, SelfP=5.05, DOALL
+  LOOP matrixmul.cpp [ 148 -  181]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 1] TimeRed(4)=3.10%, TimeRed(Ideal)=3.37%, Cov=4.13%, SelfP=5.44, DOALL
+  LOOP matrixmul.cpp [ 149 -  167]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397
+
+[ 2] TimeRed(4)=3.10%, TimeRed(Ideal)=3.37%, Cov=4.13%, SelfP=5.44, DOALL
+  LOOP matrixmul.cpp [ 149 -  161]:      OnMult
+  FUNC matrixmul.cpp [ 142 -  142]:      OnMult called at file matrixmul.cpp, line  397

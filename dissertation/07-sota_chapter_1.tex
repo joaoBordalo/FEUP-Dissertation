@@ -15,7 +15,7 @@ As mentioned previously, trying to create parallelized code can arise many probl
 This chapter is divided in two parts: one part will focus in the system's heterogeneity, how they can be used in favor of enhancing performance; and the main point of the other part is taking advantage of parallel activity by transforming sequential code into parallelized code.
 
 
-\section{Using Computers' Heterogeneous Components}\label{sec:dialecto}
+\section{Using Computers' Heterogeneous Components}\label{sec:computerheterogeneous}
 
 Technologies and frameworks in this field have been developed in order to manipulate and control efficiently the different processing components. The main goal of this technologies is to optimize application parallelization; application memory management; application workload; application scheduling queue and application kernel dimension.
 
@@ -47,7 +47,7 @@ StarPU takes particular care of scheduling tasks efficiently, using well-known a
 \subsection{Twin Peaks}
 "Software platform that enables applications originally targeted for GPUs to be executed efficiently on multicore CPUs", mentioned by Jayanth Gummaraju, Laurent Morichetti, Michael Houston, Ben Sander, Benedict R. Gaster, Bixia Zheng, in the paper \textit{Twin peaks: a software platform for heterogeneous computing on general-purpose and graphics processors} ~\cite{Gummaraju2010}. This is a small definition of the Twin Peaks' job. The aim of this software is, firstly, to program applications using an API written in OpenCL; secondly, to compile the applications code to, for instance, add syntactic and semantic checks to make sure that the kernels meet the OpenCL requirements; and execute applications in the heterogeneous environment using CPUs and GPUs.
 
-\section{Using Code Parallelization}
+\section{Using Code Parallelization}\label{sec:codeparallelization}
 Great advances have been made in the code parallelization. However, currently this kind of practice (the code parallelization) mostly is done by programmers and it requires a lot of effort, time and knowledge. It requires knowledge in the best practices related to what should and can't be parallelized, good knowledge on the code: its functionalities and its correct outputs because without these knowledges the chances to parallelize code correctly would be low since it is important to know if, firstly, is possible to parallelize and if, secondly, the parallelization doesn't jeopardize the programs results, outcomes and performance; to sum up, it requires time and effort to get a deep understanding of the code and to try if the code is correctly parallelized.~\cite{Jeon}
 
 Since this practice is very costly, although grants great results at performance levels, this field has been developing ways to have results less costly, mostly in effort and time-consuming. These developments created tools to help programmers develop parallelized code, using OpenMP directives, or software tools which recommend possible parallelized regions and its theoretical speed up gain, with Kremlin, or even a way to estimate how much can a program be parallelized, with Kismet software.~\cite{Saturnino}
@@ -59,7 +59,7 @@ OpenMP was designed to be a flexible standard, easily implemented across differe
 
 In terms of how it really does its job, OpenMP was designed to exploit certain characteristics of shared-memory architectures. The ability to directly access memory throughout the system , combined with fast shared memory locks, makes shared-memory architectures best suited for supporting OpenMP. in practice, OpenMP is a set of compiler directives and callable runtime library routines that extend Fortran (and separately, C and C++) to express shared-memory parallelism.~\cite{Nc1998}. To be more precise, OpenMP provides standard environment variables to accompany the runtime library functions where it makes sense and to simplify  the start-up scripts for portable applications. This helps application developers who, in addition to creating portable applications, need a portable runtime environment. OpenMP has been designed to be extensible and evolve with user requirements. The OpenMP Architecture Review Board was created to provide long-term support and enhancements of the OpenMP specifications. 
 
-\subsection{Kremlin}
+\subsection{Kremlin}\label{subsec:kremlin}
 The true purpose of Kremlin lies in asking the following question: "What parts of this program should I spent time parallelizing?"~\cite{ParalledSoftware}. So, in overall, Kremlin profiles a serial program and tells the programmer not only what regions should be parallelized, but also the order in which they should be parallelized to maximize the return on their effort.
 Giving a non parallelized code, Kremlin guides the programmer how to achieve better performance in its program though parallelization by presenting a list of code regions that could be parallelized. this list contains a plan that will minimize the number of regions that must be parallelized to maximize the programs performance, though parallelization.
 

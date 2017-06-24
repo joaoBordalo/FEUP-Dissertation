@@ -1,0 +1,77 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{GJL{\etalchar{+}}12}
+
+\bibitem[Dat08]{Datta2008}
+{Stencil computation optimization and auto-tuning on state-of-the-art multicore
+  architectures}.
+\newblock {\em 2008 SC - International Conference for High Performance
+  Computing, Networking, Storage and Analysis, SC 2008}, 2008.
+
+\bibitem[GJ]{Saturnino}
+Saturnino Garcia~Jr.
+\newblock {\em {A Practical Oracle for Sequential Code Parallelization}}.
+
+\bibitem[GJL{\etalchar{+}}12]{Garcia2012}
+Saturnino Garcia, Donghwan Jeon, Christopher Louie, Michael Bedford, and San
+  Diego.
+\newblock {the Kremlin Oracle for the Kremlin Open - Source Tool Helps
+  Programmers By Automatically Identi-}.
+\newblock pages 42--53, 2012.
+
+\bibitem[GJLT11]{Garcia2011}
+Saturnino Garcia, Donghwan Jeon, Chris Louie, and Michael~Bedford Taylor.
+\newblock {Kremlin : Rethinking and Rebooting gprof for the Multicore Age}.
+\newblock 2011.
+
+\bibitem[Gum10]{Gummaraju2010}
+{Twin peaks: a software platform for heterogeneous computing on general-purpose
+  and graphics processors}.
+\newblock {\em Proceedings of the 19th international conference on Parallel
+  architectures and compilation techniques - PACT '10}, page 205, 2010.
+
+\bibitem[Jeo]{Jeon}
+Donghwan Jeon.
+\newblock {\em {Parallel Speedup Estimates for Serial Programs}}.
+
+\bibitem[Kre]{KremlinRep}
+kremlin: like gprof but for parallelization.
+\newblock https://bitbucket.org/elsaturnino/kremlin.
+\newblock Accessed: 2017-04-17.
+
+\bibitem[LR]{Lee}
+Changmin Lee and Won~W Ro.
+\newblock {for Parallel Processing on CPU / GPU Hybrids}.
+
+\bibitem[MMH]{Marcus}
+H~Marcus, V~Marcus, and H~Hermann.
+\newblock {Measuring Energy Consumption for Short Code Paths Using RAPL}.
+
+\bibitem[Nc98]{Nc1998}
+S~Ilicon G Raphics~I Nc.
+\newblock {OpenMP : An Industry-}.
+\newblock pages 46--55, 1998.
+
+\bibitem[Nvi]{NvidiaGPU}
+What is gpu-accelerated computing?
+\newblock http://www.nvidia.com/object/what-is-gpu-computing.html.
+\newblock Accessed: 2017-02-09.
+
+\bibitem[Par]{ParalledSoftware}
+Saturnino (sat) garcia.
+\newblock http://home.sandiego.edu/~sat/.
+\newblock Accessed: 2017-02-12.
+
+\bibitem[She]{Shen}
+Jie Shen.
+\newblock {\em {Efficient High Performance Computing on Heterogeneous
+  Platforms}}.
+
+\bibitem[Sta]{StartPU}
+{\em {StarPU Handbook}}.
+
+\bibitem[Tay]{Taylor}
+Michael~Bedford Taylor.
+\newblock {Kismet : Parallel Speedup Estimates for Serial Programs}.
+\newblock pages 519--536.
+
+\end{thebibliography}

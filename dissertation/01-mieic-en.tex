@@ -44,28 +44,31 @@
 
 %% Include source-code listings package
 \usepackage{listings}
-\lstset{ %
- language=C,                        % choose the language of the code
- basicstyle=\footnotesize\ttfamily,
- keywordstyle=\bfseries,
- numbers=left,                      % where to put the line-numbers
- numberstyle=\scriptsize\texttt,    % the size of the fonts that are used for the line-numbers
- stepnumber=1,                      % the step between two line-numbers. If it's 1 each line will be numbered
- numbersep=8pt,                     % how far the line-numbers are from the code
- frame=tb,
- float=htb,
- aboveskip=8mm,
- belowskip=4mm,
- backgroundcolor=\color{cloudwhite},
- showspaces=false,                  % show spaces adding particular underscores
- showstringspaces=false,            % underline spaces within strings
- showtabs=false,                    % show tabs within strings adding particular underscores
- tabsize=2,	                    % sets default tabsize to 2 spaces
- captionpos=b,                      % sets the caption-position to bottom
- breaklines=true,                   % sets automatic line breaking
- breakatwhitespace=false,           % sets if automatic breaks should only happen at whitespace
- escapeinside={\%*}{*)},            % if you want to add a comment within your code
- morekeywords={*,var,template,new}  % if you want to add more keywords to the set
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\lstset{
+	backgroundcolor=\color{lbcolor},
+	tabsize=4,    
+	%   rulecolor=,
+	language=[GNU]C++,
+	basicstyle=\scriptsize,
+	upquote=true,
+	aboveskip={1.5\baselineskip},
+	columns=fixed,
+	showstringspaces=false,
+	extendedchars=false,
+	breaklines=true,
+	frame=single,
+	numbers=left,
+	showtabs=false,
+	showspaces=false,
+	showstringspaces=false,
+	identifierstyle=\ttfamily,
+	keywordstyle=\color[rgb]{0,0,1},
+	commentstyle=\color[rgb]{0,0.8,0},
+	stringstyle=\color[rgb]{0.627,0.126,0.941},
+	numberstyle=\color[rgb]{0.205, 0.142, 0.73},
+	%        \lstdefinestyle{C++}{language=C++,style=numbers}’.
 }
 
 %% Uncomment to create an index (at the end of the document)
@@ -78,6 +81,9 @@
 %%----------------------------------------
 %% TIP: if you want to define more macros, use an external file to keep them
 \include{mymacros}
+\usepackage{xr}
+\usepackage{url}
+\usepackage{hyperref}
 %%----------------------------------------
 
 %%========================================
@@ -163,7 +169,7 @@
 
 %% comment next 2 commands if numbered appendices are not used
 %\appendix
-include{11-appendix1}
+\include{11-appendix1}
 
 %% Index
 %% Uncomment next command if index is required

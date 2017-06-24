@@ -1,0 +1,81 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/W32TeX)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: 01-mieic-en.aux
+A level-1 auxiliary file: 02-abstract_en.aux
+A level-1 auxiliary file: 06-intro.aux
+A level-1 auxiliary file: 07-sota_chapter_1.aux
+A level-1 auxiliary file: 07-sota_chapter_2.aux
+A level-1 auxiliary file: 08-methodology.aux
+A level-1 auxiliary file: 09-results_and_discussion.aux
+A level-1 auxiliary file: 10-conclusion.aux
+The style file: alpha.bst
+A level-1 auxiliary file: 11-appendix1.aux
+Database file #1: 10-myrefs.bib
+Warning--to sort, need author or key in Datta2008
+Warning--to sort, need author or key in NvidiaGPU
+Warning--to sort, need author, editor, or key in StartPU
+Warning--to sort, need author or key in Gummaraju2010
+Warning--to sort, need author or key in ParalledSoftware
+Warning--to sort, need author or key in KremlinRep
+Warning--empty author in Datta2008
+Warning--empty publisher in Saturnino
+Warning--empty year in Saturnino
+Warning--empty journal in Garcia2012
+Warning--empty journal in Garcia2011
+Warning--empty author in Gummaraju2010
+Warning--empty publisher in Jeon
+Warning--empty year in Jeon
+Warning--empty journal in Lee
+Warning--empty year in Lee
+Warning--empty journal in Marcus
+Warning--empty year in Marcus
+Warning--empty journal in Nc1998
+Warning--empty publisher in Shen
+Warning--empty year in Shen
+Warning--empty author and editor in StartPU
+Warning--empty publisher in StartPU
+Warning--empty year in StartPU
+Warning--empty journal in Taylor
+Warning--empty year in Taylor
+You've used 15 entries,
+            2543 wiz_defined-function locations,
+            637 strings with 6460 characters,
+and the built_in function-call counts, 4709 in all, are:
+= -- 445
+> -- 156
+< -- 9
++ -- 50
+- -- 50
+* -- 313
+:= -- 704
+add.period$ -- 36
+call.type$ -- 15
+change.case$ -- 75
+chr.to.int$ -- 15
+cite$ -- 47
+duplicate$ -- 234
+empty$ -- 395
+format.name$ -- 62
+if$ -- 984
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 15
+newline$ -- 70
+num.names$ -- 27
+pop$ -- 158
+preamble$ -- 1
+purify$ -- 94
+quote$ -- 0
+skip$ -- 166
+stack$ -- 0
+substring$ -- 197
+swap$ -- 39
+text.length$ -- 9
+text.prefix$ -- 4
+top$ -- 0
+type$ -- 104
+warning$ -- 26
+while$ -- 32
+width$ -- 21
+write$ -- 155
+(There were 26 warnings)
