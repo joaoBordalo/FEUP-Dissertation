@@ -35,11 +35,12 @@
 \contentsline {subsubsection}{\numberline {4.3.2.3}Kremlin's code parallelization}{16}{subsubsection.4.3.2.3}
 \contentsline {section}{\numberline {4.4}Data analysis method}{16}{section.4.4}
 \contentsline {section}{\numberline {4.5}Data validation}{17}{section.4.5}
-\contentsline {chapter}{\numberline {5}Resultls and Discussion}{19}{chapter.5}
-\contentsline {section}{\numberline {5.1}Kremlins reports}{19}{section.5.1}
-\contentsline {section}{\numberline {5.2}Original Vs Manual vs Kremlin}{19}{section.5.2}
+\contentsline {chapter}{\numberline {5}Results and Discussion}{19}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introduction}{19}{section.5.1}
+\contentsline {section}{\numberline {5.2}Kremlin's reports}{20}{section.5.2}
+\contentsline {section}{\numberline {5.3}Original Vs Manual vs Kremlin}{20}{section.5.3}
 \contentsline {chapter}{\numberline {6}Conclusion}{21}{chapter.6}
-\contentsline {chapter}{References}{23}{section*.15}
+\contentsline {chapter}{References}{23}{section*.17}
 \contentsline {chapter}{\numberline {7}Appendices}{25}{chapter.7}
 \contentsline {section}{\numberline {7.1}Developed code}{25}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Original Matrix Multiplication (Mult)}{25}{subsection.7.1.1}
@@ -48,6 +49,7 @@
 \contentsline {subsection}{\numberline {7.1.4}Manual Matrix Multiplication By line (MultLine)}{28}{subsection.7.1.4}
 \contentsline {subsection}{\numberline {7.1.5}Kremlin Matrix Multiplication (Mult)}{29}{subsection.7.1.5}
 \contentsline {subsection}{\numberline {7.1.6}Kremlin Matrix Multiplication By line (MultLine)}{30}{subsection.7.1.6}
-\contentsline {section}{\numberline {7.2}Kremlin's Reports}{31}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Kremlin report for Matrix Multiplication, Mult version }{31}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Kremlin report for Matrix Multiplication, MultLine version }{31}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.1.7}Sequential program compiled and profiled by Kremlin}{31}{subsection.7.1.7}
+\contentsline {section}{\numberline {7.2}Kremlin's Reports}{39}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Kremlin report for Matrix Multiplication, Mult version }{39}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Kremlin report for Matrix Multiplication, MultLine version }{39}{subsection.7.2.2}

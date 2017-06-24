@@ -43,7 +43,7 @@ To sum up, this methodology as three main stages: learn and evaluate  Kremlin's 
 
 Firstly, and according to all the presented tools/frameworks mentioned in the second chapter, \textit{Achieving the Highest Processing Power}, in the \textit{Using Code Parallelization} section ~\ref{sec:codeparallelization}, Kremlin was chosen because it presented the best results, easy usage and accessibility comparing to the other presented ones regarding the way the tool/framework could automatically parallelise code ~\ref{subsec:kremlin}.
 
-Kremlin is a tool that indicates, for a serial program, which block can be parallelised and teorical calculated values, such as, overall speedup; self parallelism for each block; the ideal time reduced for each block, in percentage; the actual time reduced for each block, in percentage; and the block coverage considering the whole program, in percentage. The way this tool was used is as it follows: first, an object file, \textit{*.o} extension, is required from the compilation of a serial code. Afterwards, it is time to use the Kremlin's compiler with the generated object file so that it can profile the application. In order to do so, Kremlin's compiler runs the program as it is supposed to work. Now that the profiling is done, Kremlin generates the indications that should be followed to parallelise de provided serial code. It also includes the blocks that can be parallelised and the impact of this theoretical parallelization with the calculations done during the profiling. Since this parallelization report is done, the program has interpret it, confront with the code an apply it.
+Kremlin is a tool that indicates, for a sequential program, which block can be parallelised and teorical calculated values, such as, overall speedup; self parallelism for each block; the ideal time reduced for each block, in percentage; the actual time reduced for each block, in percentage; and the block coverage considering the whole program, in percentage. The way this tool was used is as it follows: first, an object file, \textit{*.o} extension, is required from the compilation of a sequential code. Afterwards, it is time to use the Kremlin's compiler with the generated object file so that it can profile the application. In order to do so, Kremlin's compiler runs the program as it is supposed to work. Now that the profiling is done, Kremlin generates the indications that should be followed to parallelise de provided sequential code. It also includes the blocks that can be parallelised and the impact of this theoretical parallelization with the calculations done during the profiling. Since this parallelization report is done, the program has interpret it, confront with the code an apply it.
 
 The Kremlin's usage seems easy, linear and fast forward, however it has some limitations that I experienced during the learning of Kremlin's capabilities: Kremlin's requires a specific environment mentioned in the Kremlin's repository ~\cite{KremlinRep}. It requires several software, libraries, compilers installations and a modern Unix operative system as its base, such as MAC OS, RHEL 7 or other Linux distribution compatible with the software specification required. Additionally, when installing the Kremlin's tool, some minor fixed are required in order to successfully install.
 
@@ -91,15 +91,15 @@ For the \textit{Mult} ~\ref{report:onmulkremlin} and \textit{MultLine} ~\ref{rep
 \begin{description}
 	\item[Time reduced] percentage of time reduced if parallelization is implemented;
 	\item[Ideal Time reduced] percentage of  ideal time reduced if parallelization is implemented;
-	\item[Coverage] percentage of serial execution time pent; within a region;
-	\item[Self Parallelism] percentage of parallelism time in a region;
+	\item[Coverage] percentage of sequential execution time in a block;
+	\item[Self Parallelism] amount of parallelism in a block;
 	\item[Parallelism type] classification of the parallelizable block;
 	\item[Loop location block] lines range of the parallelizable block;
 	\item[Function location] function name of the parallelizable block, mentioning the line where the function is defined;
 	\item[File location] file name of the parallelizable block, mentioning the line where the function is called;
 \end{description}
 
-The guidelines given by the report must be followed by the order it is suggested because the first detected block has the biggest impact in programs performance and should be parallelised first. The Coverage and Self Parallelism are metrics that indicates the speedup of the block, which, consequently, interferes with the time reduced. This block speedup must be equal or less then the overall program speedup and can be calculated as it follows~\cite{Saturnino}:
+The guidelines given by the report must be followed by the order it is suggested because the first detected block has the biggest impact in programs performance and should be parallelised first. The Coverage and Self Parallelism are metrics that indicates the speedup of the block, which, consequently, interferes with the time reduced. This block speedup must be equal or less then the overall program speedup, based on Amdahl's law, and can be calculated as it follows~\cite{Saturnino}:
 
 \begin{equation}
 speedup \leq \frac{1}{(1- Coverage) - \frac{Coverage}{Self Paralelism}}

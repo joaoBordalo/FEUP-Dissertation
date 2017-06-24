@@ -1,7 +1,63 @@
-\chapter{Resultls and Discussion}\label{chap:chap5}
+\chapter{Results and Discussion}\label{chap:chap5}
 
 \section*{}
 
-\section{Kremlins reports}
+\section{Introduction}
+
+Generally, the first objective a developer has when building software is making it work. After some experience and good practice the development becomes faster, elegant and concerns about its performance. When dealing if performance issues, there is a lot of mesuares to pay attention from the lowest hardware level to the highest software level. Now-a-days performance is as much important as the creating software, because it makes the work faster, less costs, and, in the end, more revenue. However it is really hard for a single person masters performance as a whole because there are to many variables, conditions, aspects, and realities making humanly impossible mastering everything.
+
+The approach to achieve high performance level is to have handful of expertises in each concrete area. Even so, mastering specific fields in the performance level, it is hard, takes time, lots of effort and most of the times impossible to achieve the perfect performance. Since achieving high level of performance is so important and requires a lot of effort to try to achieve it, then, first of all, is it possible to achieve high performance level in applications in an automatic way? If so, how can it be achievable? Can it totally replace an expert?
+
+Focusing these question to the field of code parallelization, more will rise, note necessarily related to this specific filed: since exists tools, like Kremlin, which help to, automatically, parallelise code, how acceptable are their results? How this specific tool can help in getting one step closer to automatic code parallelization? In which way can Kremlin be better than an expert?
+
+In order to answer all previous questions, this chapter is divided in two main sections: the first section is related to the Kremlin's activity and how is it helpful. The second section is the confrontation of all the gathered data to verify what is better and how can it contribute to the future of automatic code parallelization. 
+
+
+\section{Kremlin's reports}
+
+When Kremlin's compiles and profiles a sequential code, it provides a report with locations of the blocks that can be parallelised. Additionaly it gives some values that indicates the theoretical gain if the parallelization is implemented.
+
+For the \textit{Mult} and \textit{MultLine} algorithm, Kremlin gave these reports ~\ref{report:onmulkremlin} ~\ref{report:onmulinekremlin}, respectively. Taking into account that the manual code parallelization was done in the first place, the risk of being bias is null and, additionally, helps to understand if Kremlin is reporting things correctly.
+
+In this case, Kremlin detected the block code with the most impact on application performance for both implementations (\textit{Mult} and \textit{MultLine}). Additionally, Kremlin's report pointed the locations of more block to be parallelised, however, the impact of these blocks being parallelised might have a low impact or jeopardizing the applications' performance, also for both implementations. The impact of the parallization made in the others block is analysed in the next section because a verdict can be made after comparing the execution times of the Manual's group against Kremlin's group. 
+
+The justification behind these analysis is based on the \textit{ time reduced}, \textit{ideal time reduced}, \textit{coverage} and \textit{self parallelism} values and the block location, provided by the report, comparing with the expected result and manual code parallelization by an expert, in both implementation.
+
+Getting a close look in these reports, at the left side is \textit{Mult} report values, ~\ref{report:onmulkremlin}, and on the right side is \textit{MultLine} report values, ~\ref{report:onmulinekremlin}:
+
+\begin{table}[htb]
+\centering
+\caption{Kremlin's report values for the matrix multiplication block}
+\begin{tabular}{ |l|l| }
+	\hline
+	\textbf{Time reduced} & 66.38\% \\ \hline
+	\textbf{Ideal time reduced} & 70.96\% \\ \hline
+	\textbf{Coverage} & 88.51\% \\ \hline
+	\textbf{Self parallelism} & 5.05 \\
+	\hline
+\end{tabular}
+\quad
+\begin{tabular}{ |l|l| }
+	\hline
+	\textbf{Time reduced} & 63.01\% \\ \hline
+	\textbf{Ideal time reduced} & 63.20\% \\ \hline
+	\textbf{Coverage} & 84.02\% \\ \hline
+	\textbf{Self parallelism} & 4.03 \\
+	\hline
+\end{tabular}
+\end{table}
+
+In both reports, the high percentage of the reduced time and reduced time means that parallelizing these blocks the execution time of this block is, theoretically, reduced in between those two values. 
+
+Taking a close look in the others blocks, their locations refers to the matrices initialization and the values of timed reduced and ideal timed reduced are really low, around 3\% in both implementations, which means that the improved performance is insignificant and might cause delay in during de applications executions. However, this situations is confirmed in the next section. 
+
 
 \section{Original Vs Manual vs Kremlin}
+
+-analisar individualemtne cada caso (origal, depois manual e depois kremlin), em relação ao seu algoritmo. estabelecer para cada caso individual coerencia relativamente 
+
+-analisar combinação orginal vs manual e original vs kremlin
+
+-analisar Manual vs Kremlin
+
+

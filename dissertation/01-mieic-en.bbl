@@ -42,10 +42,6 @@ kremlin: like gprof but for parallelization.
 Changmin Lee and Won~W Ro.
 \newblock {for Parallel Processing on CPU / GPU Hybrids}.
 
-\bibitem[MMH]{Marcus}
-H~Marcus, V~Marcus, and H~Hermann.
-\newblock {Measuring Energy Consumption for Short Code Paths Using RAPL}.
-
 \bibitem[Nc98]{Nc1998}
 S~Ilicon G Raphics~I Nc.
 \newblock {OpenMP : An Industry-}.

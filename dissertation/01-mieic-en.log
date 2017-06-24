@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.21)  24 JUN 2017 11:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.21)  24 JUN 2017 16:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -710,7 +710,11 @@ Package: nicefrac 1998/08/04 v0.9b Nice fractions
 
 (c:/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)) (./01-mieic-en.aux
+))
+(c:/texlive/2017/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count118
+) (./01-mieic-en.aux
 (./02-abstract_en.aux) (./05-abbrevs_en.aux) (./06-intro.aux)
 (./07-sota_chapter_1.aux) (./07-sota_chapter_2.aux
 
@@ -720,21 +724,21 @@ LaTeX Warning: Label `fig:opcl' multiply defined.
 ) (./11-appendix1.aux))
 \openout1 = `01-mieic-en.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 93.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 95.
  (c:/texlive/2017/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
@@ -775,16 +779,16 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \big@size=\dimen134
 (c:/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count118
+\scratchcounter=\count119
 \scratchdimen=\dimen135
 \scratchbox=\box31
-\nofMPsegments=\count119
-\nofMParguments=\count120
+\nofMPsegments=\count120
+\nofMParguments=\count121
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count121
+\MPscratchCnt=\count122
 \MPscratchDim=\dimen136
-\MPnumerator=\count122
-\makeMPintoPDFobject=\count123
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
 \everyMPtoPDFconversion=\toks21
 ) (c:/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -808,7 +812,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box32
-Package hyperref Info: Link coloring ON on input line 93.
+Package hyperref Info: Link coloring ON on input line 95.
 
 (c:/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -816,50 +820,50 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count124
+\c@section@level=\count125
 )
-LaTeX Info: Redefining \ref on input line 93.
-LaTeX Info: Redefining \pageref on input line 93.
-LaTeX Info: Redefining \nameref on input line 93.
+LaTeX Info: Redefining \ref on input line 95.
+LaTeX Info: Redefining \pageref on input line 95.
+LaTeX Info: Redefining \nameref on input line 95.
 
 (./01-mieic-en.out) (./01-mieic-en.out)
 \@outlinefile=\write3
 \openout3 = `01-mieic-en.out'.
 
-\c@lstlisting=\count125
+\c@lstlisting=\count126
 \@crestbox=\box33
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 130.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 132.
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 130.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 132.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 130.
-<figures/uporto-feup.pdf, id=213, pagebox=cropbox, 338.26375pt x 126.4725pt>
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 132.
+<figures/uporto-feup.pdf, id=225, pagebox=cropbox, 338.26375pt x 126.4725pt>
 File: figures/uporto-feup.pdf Graphic file (type pdf)
 <use figures/uporto-feup.pdf>
-Package pdftex.def Info: figures/uporto-feup.pdf  used on input line 130. on in
-put line 130.
+Package pdftex.def Info: figures/uporto-feup.pdf  used on input line 132. on in
+put line 132.
 Package pdftex.def Info: Requested size: 204.85983pt x 76.59618pt on input line
- 130.
+ 132.
  [-3{c:/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
 
  <./figures/uporto-feup.pdf>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 130.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 132.
 
 
 (c:/texlive/2017/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 130.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 132.
  [-2
 
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 130.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 132.
  [-1
 
 
@@ -931,13 +935,20 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
 
 ] [8
 
+] (./01-mieic-en.lot)
+\tf@lot=\write6
+\openout6 = `01-mieic-en.lot'.
+
+ [9
+
 ]
 \openout2 = `05-abbrevs_en.aux'.
 
- (./05-abbrevs_en.tex) [9
+ (./05-abbrevs_en.tex
+[10
 
 
-] [10
+]) [11] [12
 
 
 ]
@@ -972,7 +983,7 @@ Chapter 2.
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
-<figures/OpenCL.png, id=368, 514.3215pt x 181.8795pt>
+<figures/OpenCL.png, id=394, 514.3215pt x 181.8795pt>
 File: figures/OpenCL.png Graphic file (type png)
 <use figures/OpenCL.png>
 Package pdftex.def Info: figures/OpenCL.png  used on input line 32. on input li
@@ -1004,7 +1015,7 @@ Chapter 4.
 
 
 ]
-<figures/methodology.png, id=432, 1067.187pt x 452.28975pt>
+<figures/methodology.png, id=458, 1067.187pt x 452.28975pt>
 File: figures/methodology.png Graphic file (type png)
 <use figures/methodology.png>
 Package pdftex.def Info: figures/methodology.png  used on input line 26. on inp
@@ -1029,21 +1040,25 @@ t line 79.
 
 ]
 Chapter 5.
-) [19]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [19])
+[20]
 \openout2 = `10-conclusion.aux'.
 
- (./10-conclusion.tex [20
-
-
-
-]
+ (./10-conclusion.tex
 Chapter 6.
-) [21] [22
+) [21
+
+
+
+] [22
 
 
 ] (./01-mieic-en.bbl (./01-mieic-en.brf)
-\tf@brf=\write6
-\openout6 = `01-mieic-en.brf'.
+\tf@brf=\write7
+\openout7 = `01-mieic-en.brf'.
 
 ) [23
 
@@ -1075,23 +1090,39 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 )
 (./codes/matrixmul.cpp [26]) (./codes/matrixmul.cpp [27])
 (./codes/matrixmul.cpp [28]) (./codes/matrixmul.cpp [29])
-(./codes/matrixmul.cpp [30]) (./codes/onMultKremlin.txt) [31]
-(./codes/onMultLineKremlin.txt)
+(./codes/matrixmul.cpp [30]) (./codes/matrixmulforkremlin.cpp [31]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Package lineno Warning: Linenumber reference failed, 
-(lineno)                rerun to get it right.
+ [32]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-) [32]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
- (./01-mieic-en.aux (./02-abstract_en.aux) (./05-abbrevs_en.aux)
-(./06-intro.aux) (./07-sota_chapter_1.aux) (./07-sota_chapter_2.aux)
-(./08-methodology.aux) (./09-results_and_discussion.aux) (./10-conclusion.aux)
-(./11-appendix1.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
+ [33]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [34]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [38])
+(./codes/onMultKremlin.txt) (./codes/onMultLineKremlin.txt [39])) [40]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 182.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 182.
+
+(./01-mieic-en.aux (./02-abstract_en.aux) (./05-abbrevs_en.aux) (./06-intro.aux
+) (./07-sota_chapter_1.aux) (./07-sota_chapter_2.aux) (./08-methodology.aux)
+(./09-results_and_discussion.aux) (./10-conclusion.aux) (./11-appendix1.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 182.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 182.
 Package rerunfilecheck Info: File `01-mieic-en.out' has not changed.
-(rerunfilecheck)             Checksum: 9E8CD1490C45829C87464CCC7D830ED7;3895.
+(rerunfilecheck)             Checksum: 722C313FA426F509A2E946EC56E4BE2C;4118.
 Package rerunfilecheck Info: File `01-mieic-en.brf' has not changed.
 (rerunfilecheck)             Checksum: 03394B5455483B862A2CC565A7C003EC;796.
 
@@ -1101,13 +1132,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 182.
  ) 
 Here is how much of TeX's memory you used:
- 10929 strings out of 492995
- 159942 string characters out of 6136402
- 419265 words of memory out of 5000000
- 13719 multiletter control sequences out of 15000+600000
+ 11697 strings out of 492995
+ 171022 string characters out of 6136402
+ 525536 words of memory out of 5000000
+ 14025 multiletter control sequences out of 15000+600000
  71574 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,11n,67p,1275b,1189s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1119,10 +1150,10 @@ r/ucrr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c
 :/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2017/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type
 1/urw/times/utmri8a.pfb>
-Output written on 01-mieic-en.pdf (46 pages, 273774 bytes).
+Output written on 01-mieic-en.pdf (56 pages, 329920 bytes).
 PDF statistics:
- 1028 PDF objects out of 1200 (max. 8388607)
- 956 compressed objects within 10 object streams
- 468 named destinations out of 1000 (max. 500000)
- 432 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1625 PDF objects out of 1728 (max. 8388607)
+ 1537 compressed objects within 16 object streams
+ 920 named destinations out of 1000 (max. 500000)
+ 456 words of extra memory for PDF output out of 10000 (max. 10000000)
 
