@@ -14,7 +14,7 @@ To increase the credibility of this experiment, two similar algorithms for the m
 
 Several experiments were conducted to understand the influence of Kremlin's indications versus code being manually parallelized  by an expert. The data's length, in this case, the matrix size; the number of threads used and if the code was parallelized were the used metrics to evaluate the results, based on a comparison of the execution time, changing these variables.
 
-In this chapter it is explained the methodology and the steps followed that guided to report in the Results and Discussion chapter the results and conclusions obtained from the obtained outcomes coming from de experiences. This chapter also includes  detailed information of the acquired data from the conducted experiences, as in, how it is obtained and its meaning; also includes the methods that were used to analyse the obtained data and the reason behind those methods; how the data was validated in order to verify its correctness, accuracy and reliability; and, in the end, it includes the setup and material used to conduct such experiments.
+In this chapter it is explained the methodology and the steps followed that guided to report in the Results and Discussion chapter the results and conclusions obtained from the obtained outcomes coming from de experiences. This chapter also includes  detailed information of the acquired data from the conducted experiences, as in, how it is obtained and its meaning; also includes the methods that were used to analyse the obtained data and the reason behind those methods; and, in the end, how the data was validated in order to verify its correctness, accuracy and reliability.
 
 
 
@@ -60,7 +60,7 @@ Kremlin's tool just points the regions/blocks where the program can be paralleli
 
 In my case, I followed all the instructions provided by Kremlin, located all the \textit{for} loops blocks indicated by kremlin's tool and applied the OpenMP \textit{pragma} directives. 
 
-Following the two reports, ~\ref{code:onmulkremlinreport} ~\ref{code:onmulinekremlinreport}, and looking at the code's structure for both codes, it can be divided in 2 bigger parts: the \textit{for} loops used for matrices initialization and the \textit{for} loop for the matrix multiplication. With this information, code understanding and using an expert knowledge, the code parallelization was done.
+Following the two reports, ~\ref{report:onmulkremlin} ~\ref{report:onmulinekremlin}, and looking at the code's structure for both codes, it can be divided in 2 bigger parts: the \textit{for} loops used for matrices initialization and the \textit{for} loop for the matrix multiplication. With this information, code understanding and using an expert knowledge, the code parallelization was done.
 
 
 \subsection{Manually Code parallelization}
@@ -81,33 +81,60 @@ To obtain the final execution time of each implementation (Original Matrix Multi
 After compiling all these implementations and registering all the execution time for different matrix sizes and number of threads, in this case not applied to the original codes, this data was organized so it could be used to compare results and conclude about the performed experiences.
 
 \section{Data collection from executed experiences}
--from kremlins' usage
--from kremlins output when using matrix multiplication
--times from original code
--Times from kremlins matrix multiplication
--times from maunally code parallelization
--variables: Pralellized vs not parallelized, matrix size, nº of threads)
 
+From all the developed work, the obtained data can be divided in to moments: Kremlin's indications reports and the execution times for the six code variations.
 
-In order to achieve such performance in the conditions mentioned in the problem's section, I purpose an autotuner or a concept proof that will enhance the application. For that, this autotuner will receive the program's original source code and though parallel optimization a new code will emerge. This code's modification will increase applications performance without jeopardizing the application's outcome.
+\subsection{Kremlin's indications reports} 
+
+For the \textit{Mult} ~\ref{report:onmulkremlin} and \textit{MultLine} ~\ref{report:onmulinekremlin} codes were generated a report done by Kremlin. This report displays for each parallelizable block:
+
+\begin{description}
+	\item[Time reduced] percentage of time reduced if parallelization is implemented;
+	\item[Ideal Time reduced] percentage of  ideal time reduced if parallelization is implemented;
+	\item[Coverage] percentage of serial execution time pent; within a region;
+	\item[Self Parallelism] percentage of parallelism time in a region;
+	\item[Parallelism type] classification of the parallelizable block;
+	\item[Loop location block] lines range of the parallelizable block;
+	\item[Function location] function name of the parallelizable block, mentioning the line where the function is defined;
+	\item[File location] file name of the parallelizable block, mentioning the line where the function is called;
+\end{description}
+
+The guidelines given by the report must be followed by the order it is suggested because the first detected block has the biggest impact in programs performance and should be parallelised first. The Coverage and Self Parallelism are metrics that indicates the speedup of the block, which, consequently, interferes with the time reduced. This block speedup must be equal or less then the overall program speedup and can be calculated as it follows~\cite{Saturnino}:
+
+\begin{equation}
+speedup \leq \frac{1}{(1- Coverage) - \frac{Coverage}{Self Paralelism}}
+\end{equation}
+
+\subsection{Execution times for the code variations}
+
+After running the six implementations, the results can be divided in three major groups and each group is has the respective implementations of the \textit{Mult} and \textit{MultLine} algorithms. Each group has its own experimental environment,  with their own variables and their own meaning according to the given context.
+
+\subsubsection{Original code}
+
+The Original code only variable is the matrix size. This group is  a reference group to compare the results of the others group and to quantify the impact of the others groups. The results of this group are the execution times running both matrix multiplications algorithm versions.
+
+\subsubsection{Manual code parallelization}
+
+The Manual code parallelization by an expert has as variables the matrix size and number of threads used for each run. This groups's results are the execution times for both matrix multiplication algorithm versions. These results were used to confront with the following group in order to evaluate the improvement that a guided parallelizations, using Kremlin, can for an application.
+
+\subsubsection{Kremlin's code parallelization}
+
+Like the previous group, Kremlin's code parallelization indications use the same variables and provide the same type of the results. However, this group is responsible to define if it is advantageous to use software tools to help in automatically parallelise code. 
+
 
 \section{Data analysis method}
--3 versions of the same code (original, manual code parallelization, kremlins parallelization)
--Comparing execution time for each case
--Table and grafic analysis
--Impact for each concret case (increase or decrease in execution time)
-To create this autotuner, the first step is to identify what parameters exist to tune and what impact they have in the application. For this matter, with the help of Kremlin and manual expert parallelization applications will increase its performance and parameters will be found. As Kremlin detect possible parallelized code and, additionally, measures the applications speedup with such modifications, and with manual expert parallelization, there will be a confront with these results and find what is better between these two scenarios. With this confrontation, and with different use cases, the tunning parameters will be found and the autotuner will be made.
+
+Analysing data is a very important stage because the it is necessary to have good and correct conclusions. From the experiments made a lot of data as been generated and without a proper organization it is hard to understand the meaning, therefore, hard to take good conclusions from its analysis. There are three groups of code and in each group two different algorithms implementation. In order to make a good analysis from the execution times for each situation and comparing with the others situations, the collected results were stored in tables along with the experimental related variables. Additionally, calculations were required, such as,the difference between executed times between groups and algorithm implementation; the ratio between these executed times; the percentage of the increase/decrease for these executed times; and the impact in the execution time that the others two groups have comparing with the Original code group. After these data manipulation, 
+the best way to analyse all this generated and calculated data is by a dispersion plot. Using a dispersion plot transforms data into information visually understandable and easier to conclude because these plots display the variation of results according to the experimental environment variables.
 
 
 \section{Data validation}
-Comparing with teoric and expected results vs experimental results
-To validate the whole methodology process, not only the autotuner itself but to compare the results between Kremlin outcomes and the code manually being parallelized, for evaluation metrics will be used: system energy consumptions when running the application; applications execution time; number of memory accesses and cache misses on the application; and the processing power measured by the number of instructions per secs. These evaluation metrics will be compared in three different cases: the original sequential code; manually paralleled code; and "automatic" paralleled code. In this last case it can be with Kremlin or with autotuner, depending in which of the methodology's state I am currently in.
 
-To measure the above mentioned evaluation metrics, some libraries will be used: to measure energy consumptions RAPL will be used~\cite{Marcus}; to measure application  execution time OpemMP will be used ~\cite{Nc1998}; to measure number of memory accesses, cache misses and processing power PAPI ~\cite{Marcus} will be used.
+A considerable amount of data was generated and, more importantly, it is important that this data is scientific correct, or at least there is an explanation. In order to keep its fidelity, it is crucial to validate each and every piece of data. The first measure is to have a critical position every time by questioning if the obtained value makes sense when compared with th theoretical, or expected or referenced value. In this current case, for instance, the Original group implementation is the reference, which means if the other groups have a higher execution time, or the data was some defect caused by the computer's hardware, or the implementation isn't good enough, or any other reason that can justify the data invalidation.
 
-Finally, two use cases will be used to validate this solution: a biopharmaceutical HPC application for accelerating drug discovery; and a self-adaptive navigation system to be used in smart cities. These use cases will be the applications that, the autotuner will try to achieve the highest processing power without jeopardizing the applications' outcome and having a low energy consumption.
+Criticism can't be the only measure because it could be luck and the gathered data happened to be correct. it is important consistency. To do so, the tests must be performed several times under the same circumstances and with a plausible and  considerable amount of values to find patterns. For this particular case  it is used a matrix size large enough, [1000,2000,3000,4000], and a wide range for the number of threads, [1,2,3,4,5,6,7,8]. For instance, if the matrix size was small, such as one hundred, the execution time would be so low and with so much error accumulated since the computer executed fast enough that it couldn't count the time with precision. 
 
-\section{Experimental environment setup}
+Finally, to make reasonable comparisons and analogies between results, the experience environments must have some connection in its variables or environment. Without a connection the data as no meaning, therefore, it turns impossible to take conclusions. In the performed experiences, it was used the same algorithm, Matrix Multiplication, with small modifications in the implementations but with the same structure. Additionally, the environment variables were the same: number of threads and matrix size.
 
--Kremlins setup
--matrix mul setup
+  
+
