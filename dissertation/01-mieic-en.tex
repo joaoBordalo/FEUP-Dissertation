@@ -34,9 +34,9 @@
 %% - backrefs: include back references from bibliography to citation place
 
 %% Uncomment the next lines if side by side graphics used
-%\usepackage[lofdepth,lotdepth]{subfig}
-%\usepackage{graphicx}
-%\usepackage{float}
+\usepackage[lofdepth,lotdepth]{subfig}
+\usepackage{graphicx}
+\usepackage{float}
 
 %% Include color package
 \usepackage{color}
@@ -87,6 +87,7 @@
 \usepackage{nicefrac}
 \usepackage{lipsum}
 
+
 %%----------------------------------------
 
 %%========================================
@@ -130,13 +131,13 @@
 
 % remove unnecssary \include{} commands
 \begin{Prolog}
-  \include{02-abstract_en} % the abstract
+ % \include{02-abstract_en} % the abstract
  % \include{03-acknows_en}  % the acknowledgments
   %\include{04-quote}       % initial quotation if desired
-  \cleardoublepage
-  \pdfbookmark[0]{Table of Contents}{contents}
-  \tableofcontents
-  \cleardoublepage
+ % \cleardoublepage
+  %\pdfbookmark[0]{Table of Contents}{contents}
+  %\tableofcontents
+ % \cleardoublepage
   \pdfbookmark[0]{List of Figures}{figures}
   \listoffigures
  \cleardoublepage
@@ -151,14 +152,14 @@
 \StartBody
 
 %% TIP: use a separate file for each chapter
-\include{06-intro} 
-\include{07-sota_chapter_1}
-\include{07-sota_chapter_2}
+%\include{06-intro} 
+%\include{07-sota_chapter_1}
+%\include{07-sota_chapter_2}
 %\include{08-problem__solution_perspective}%for pdis
 \include{08-methodology}
 \include{09-results_and_discussion}
 %\include{09-conclusion___future_work}%for pdis
-\include{10-conclusion}
+%\include{10-conclusion}
 %\include{chapter5} 
 
 %%----------------------------------------
@@ -168,7 +169,7 @@
 %% Bibliography
 %% Comment the next command if BibTeX file not used
 %% bibliography is in ``myrefs.bib''
-\PrintBib{10-myrefs}
+%\PrintBib{10-myrefs}
 
 %% comment next 2 commands if numbered appendices are not used
 %\appendix

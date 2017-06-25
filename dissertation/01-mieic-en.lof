@@ -1,11 +1,20 @@
 \select@language {english}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Followed up methodology\relax }}{2}{figure.caption.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The OpenCL platform model and the OpenCL memory model\relax }}{4}{figure.caption.9}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces The OpenCL platform model and the OpenCL memory model\relax }}{10}{figure.caption.11}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Followed up methodology\relax }}{12}{figure.caption.13}
-\addvspace {10\p@ }
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Dispersion plot that represents the evolution of execution time with the matrix size increase in both \textit {Mult} and \textit {MultLine} sequential implementations\relax }}{11}{figure.caption.8}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Dispersion plot that represents the evolution of execution time with the matrix size increase in function of the number of threads. Version of the manual code parallelization for \textsl {Mult} algorithm\relax }}{12}{figure.caption.9}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Dispersion plot that represents the evolution of execution time with the matrix size increase in function of the number of threads. Version of the manual code parallelization for \textsl {MultLine} algorithm\relax }}{12}{figure.caption.10}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Dispersion plot that represents the evolution of time reduced with the matrix size in function of the number of threads. Versions of \textit {Mult} and \textit {MultLine} manual implementations. \relax }}{13}{figure.caption.11}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Dispersion plot that represents the evolution of execution time with the matrix size increase in function of the number of threads. Version of the Kremlin code parallelization for \textsl {Mult} algorithm\relax }}{14}{figure.caption.12}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Dispersion plot that represents the evolution of execution time with the matrix size increase in function of the number of threads. Version of the Kremlin parallelization code for \textsl {Multline} algorithm\relax }}{14}{figure.caption.13}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Dispersion plot that represents the evolution of time reduced with the matrix size in function of the number of threads. Versions of \textit {Mult} and \textit {MultLine} Kremlin's implementations.\relax }}{15}{figure.caption.14}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Dispersion plot that represents the evolution of execution time with the matrix size in function of Manual and Original.\relax }}{16}{figure.caption.15}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Dispersion plot that represents the evolution of execution time with the matrix size in function of Kremlin and Original groups implementations.\relax }}{16}{figure.caption.16}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Dispersion plot that represents the evolution of time reduced with the matrix size in function of Manual and Kremlin groups implementations.\relax }}{17}{figure.caption.17}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Dispersion plot that represents the evolution of execution time ratio with the matrix size in function of the number of threads, for the \textit {Mult} algorithm .\relax }}{18}{figure.caption.19}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces Dispersion plot that represents the evolution of execution time ratio with the matrix size in function of the number of threads, for the \textit {MultLine} algorithm.\relax }}{19}{figure.caption.20}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces Dispersion plot that represents the evolution of execution time ratio with the number of threads in function of matrix size, for the \textit {Mult} algorithm.\relax }}{19}{figure.caption.21}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces Dispersion plot that represents the evolution of execution time ratio with the number of threads in function of matrix size, for the \textit {MultLine} algorithm.\relax }}{20}{figure.caption.22}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces Dispersion plot that represents the evolution of execution time ratio with the matrix size in for 8 threads being used, using \textit {Mult} and \textit {MultLine} algorithms.\relax }}{20}{figure.caption.23}
 \addvspace {10\p@ }
