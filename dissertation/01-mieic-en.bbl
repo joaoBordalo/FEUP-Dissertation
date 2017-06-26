@@ -1,0 +1,12 @@
+\begin{thebibliography}{Kre}
+
+\bibitem[GJ]{Saturnino}
+Saturnino Garcia~Jr.
+\newblock {\em {A Practical Oracle for Sequential Code Parallelization}}.
+
+\bibitem[Kre]{KremlinRep}
+kremlin: like gprof but for parallelization.
+\newblock https://bitbucket.org/elsaturnino/kremlin.
+\newblock Accessed: 2017-04-17.
+
+\end{thebibliography}
