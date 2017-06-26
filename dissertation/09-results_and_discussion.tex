@@ -118,7 +118,7 @@ However, there is a difference between these two plots is the value of the execu
 
 It is a fact, observed in Figure~\ref{fig:manualreducedtime}, that increasing the matrix size, the time reduced tends to a certain value which is independent of the number of threads. This value is the ceiling where \textit{MultLine} algorithm can not be better than \textit{Mult} algorithm for the same hardware components; meaning the existence of a hardware limitation (processor power, memory ram and cache size) since the increase of the matrix size will, proportionally, increase the number of loads, writes and cache missed for both algorithms.
 
-Another fact is that the higher the thread number, lesser will be de timed reduced, and lesser will be the executed time, also related to the maximum capacity of threads a multi-core processor can have and have working at the same time.
+Another fact is that the higher the thread number, lesser will be de timed reduced, and lesser will be the executed time, also related to the maximum capacity of threads a multicore processor can have and have working at the same time.
 
 Another noteworthy fact is , for low values of matrix size, 1000 and 2000, and the higher the number of threads being used, the time reduced is negative, meaning executed time for \textit{Mult} implementation is lower than \textit{MultLine} implementations, concluding that  \textit{Mult} implementation is better suited for low size data in case a high number of threads are being used. This is due to many threads are being used simultaneously and they are trampling each other in order to complete their task, which increases the overall overhead, and so the reason behind ne time reduced negative value.
 

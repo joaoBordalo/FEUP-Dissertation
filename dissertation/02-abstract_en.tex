@@ -4,14 +4,18 @@ Nowadays computational platforms have been evolving to the high computational po
 To manage this energy cost and keep with high performance, computers are built under the assumption of heterogeneous systems, in other words, computers that have different kind of processing units with different functions, such as CPU, GPU, Xeon Phi and FPGA. 
 So, developers should take advantage of parallel activity and scheduling tasks by using the various parts of the heterogeneous systems.
 
-Now the problem is how to efficiently achieve the highest performance possible when running software applications by taking the most advantage of such heterogeneous systems and keeping the energy cost at the minimum level without jeopardizing the application performance and its results. 
-Overall, the problem consists in the coexistence work of multicore specs, its parallelism and its shared cache problems; CPU and GPU parallelism and scheduling tasks; performance; and energy costs.
+Now the problem is how to efficiently achieve the highest performance possible when running software applications by taking the most advantage of such heterogeneous systems without jeopardizing the application performance and its results. 
+Overall, the problem consists in the coexistence work of multicore specs, its parallelism and its shared cache problems; CPU parallelism and scheduling tasks; performance.
 
-For this problem's solution is expected to find/create an autotuner, or at least a concept proof, that can achieve the best performance in a software application by enhancing the application's code automatically in a level that takes the best benefit of the available hardware without elevated energy costs. To do so, after creating its code, the developer runs the autotuner and it will enhance, automatically, the code to get the best performance.
+For this problem's solution is expected to find patterns and variables that helps tuning application with the best performance main goal in mind. Detecting these patterns and variables that improve applications, by making them parallelized, helps in the progression of how to make automatic paralleled code, since now-a-days making parallel code requires a lot of effort and time.
 
-This kind of solution requires some validation process and metrics to make sure that it is doing its work and with proper results. To do so, the idea of the process' validation is going to be about comparing the behaviour of three different codes: a version of  a serialized code; a version of the same code but with an expert manually paralleling it; and a version of the serialized code but automatically parallelized. The metrics that will be used to compare these three code versions are the following: processing power; execution time; number of memory accesses; and energy consuming. 
+This kind of solution requires some validation process and metrics to make sure that it is doing its work and with proper results. To do so, the idea of the process' validation is going to be about comparing the behaviour of three different codes: a version of  a serialized code; a version of the same code but with an expert manually paralleling it; and a version of the serialized code but «automatically» parallelized by a tool called Kremlin. The metric that was used to compare these three code versions is execution time in different experience environment.
 
-With this solution, applications will achieve its highest performance possible in an automatic way and developers will have less burdened about creating parallel code, consequently, saving them time.
+The application of this work will help developing better automatic tools to make parallel code, which means in a long term, developers will have less burdened about creating parallel code, consequently, saving them time.
+
+
+
+applications will achieve its highest performance possible in an automatic way and developers will have less burdened about creating parallel code, consequently, saving them time.
 
 \chapter*{Resumo}
 
@@ -19,12 +23,13 @@ Atualmente as plataformas computacionais têm vindo a evoluir na direção do el
 De modo a gerir este custo energético e manter a elevada performance, os computadores são construídos sobre a assunção de sistemas heterogéneos, isto é, computadores compostos por diferentes tipos de unidades de processamentos com diferentes funcionalidades, como por exemplo, CPU,GPU, Xeon Phi e FPGA.
 É neste sentido que os programadores devem tirar proveito de atividade paralela e escalonamento de tarefas recorrendo às várias partes que compõem o sistema heterogéneo.
 
-O problema incide sobre como atingir de forma eficiente o maior desempenho possível quando se corre uma aplicação de software, tirando o maior proveito dos sistemas heterogéneos e mantendo o nível de custo energético o mais baixo possível sem prejudicar o resultado e o desempenho da aplicação.
+O problema incide sobre como atingir de forma eficiente o maior desempenho possível quando se corre uma aplicação de software, tirando o maior proveito dos sistemas heterogéneos sem prejudicar o resultado e o desempenho da aplicação.
 
-Para solucionar este problema é esperado encontrar/criar um autotuner, ou pelo menos uma prova de conceito, que consegue atingir o melhor desempenho numa aplicação de software, aprimorando automaticamente o código da aplicação a um nível que take o melhor proveito do hardware disponível sem custos elevados de energia. Para tal, após o código criado, o programador correrá o autotuner e este irá aprimorar, automaticamente, o código para atingir o melhor desempenho.
+Para solucionar este problema é esperado encontrar/padrões e variáveis que ajudem a afinar applicações com o principal objetivo de atingir a melhor performance em mente. Detetar estes padrões e variáveis que melhoram applicações, colocando-as paralelas, ajuda no avanço de como fazer código aparaelelo automáticamente, uma vez que nos dias de hoje fazer código paralelo requer muito tempo e esforço.
 
-Este tipo de solução requer um processo de validação e métricas para assegurar que se está a fazer o trabalho corretamente e com resultados aceitáveis. Para tal, a ideia da validação do processo consiste em comparar o comportamento de três diferentes códigos: uma versão sequencial de um código; a versão deste mesmo código mas paralelizada por um perito; e a versão do código sequencial mas paralelizado automaticamente. As métricas que serão utilizadas para comprar estas três versões de código são as seguintes: poder de processamento; tempo de execução; número de acessos a memória; e custo energético.
+Este tipo de solução requer um processo de validação e métricas para assegurar que se está a fazer o trabalho corretamente e com resultados aceitáveis. Para tal, a ideia da validação do processo consiste em comparar o comportamento de três diferentes códigos: uma versão sequencial de um código; a versão deste mesmo código mas paralelizada por um perito; e a versão do código sequencial mas paralelizado «automaticamente» por uma ferramenenta denominada de Kremlin. A métrica que foi utilizada para comprar estas três versões de código é o tempo de execução em diferentes ambientes experimentais
 
-Com esta solução, as aplicações conseguiram atingir o seu melhor desempenho possível de forma automática e sobrecarregando menos os programadores a criarem código paralelo o que, consequentemente, poupar-lhes-á tempo.
+A aplicação deste trabalho irá ajudar a desenvolver melhores ferramentas para fazer código paralelo automático, siginificando que, a longo prazo, programadores estarão menos sobrecarregados a criarem código paralelo o que, consequentemente, poupar-lhes-á tempo.
+
 
 

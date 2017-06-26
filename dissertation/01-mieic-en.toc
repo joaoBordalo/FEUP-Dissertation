@@ -1,39 +1,49 @@
 \select@language {english}
-\contentsline {chapter}{\numberline {1}Methodology}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Introduction}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Research Method}{2}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Deep learn on Kremlin's usage}{3}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Kremlin's application in specific code samples}{4}{subsection.1.2.2}
-\contentsline {subsection}{\numberline {1.2.3}Code parallelization with Kremlin's data}{4}{subsection.1.2.3}
-\contentsline {subsection}{\numberline {1.2.4}Manually Code parallelization}{4}{subsection.1.2.4}
-\contentsline {subsection}{\numberline {1.2.5}Results analysis}{5}{subsection.1.2.5}
-\contentsline {section}{\numberline {1.3}Data collection from executed experiences}{5}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}Kremlin's indications reports}{5}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Execution times for the code variations}{6}{subsection.1.3.2}
-\contentsline {subsubsection}{\numberline {1.3.2.1}Original code}{6}{subsubsection.1.3.2.1}
-\contentsline {subsubsection}{\numberline {1.3.2.2}Manual code parallelization}{6}{subsubsection.1.3.2.2}
-\contentsline {subsubsection}{\numberline {1.3.2.3}Kremlin's code parallelization}{6}{subsubsection.1.3.2.3}
-\contentsline {section}{\numberline {1.4}Data analysis method}{6}{section.1.4}
-\contentsline {section}{\numberline {1.5}Data validation}{7}{section.1.5}
-\contentsline {chapter}{\numberline {2}Results and Discussion}{9}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introduction}{9}{section.2.1}
-\contentsline {section}{\numberline {2.2}Kremlin's reports}{10}{section.2.2}
-\contentsline {section}{\numberline {2.3}Comparison between Original, Manual and Kremlin}{10}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}The Three groups individually analysed}{11}{subsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.1.1}Original}{11}{subsubsection.2.3.1.1}
-\contentsline {subsubsection}{\numberline {2.3.1.2}Manual}{12}{subsubsection.2.3.1.2}
-\contentsline {subsubsection}{\numberline {2.3.1.3}Kremlin}{13}{subsubsection.2.3.1.3}
-\contentsline {subsection}{\numberline {2.3.2}Measuring the performance's impact using code parallelization}{13}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Comparison between Manual and Kremlin}{13}{subsection.2.3.3}
-\contentsline {chapter}{\numberline {3}Appendices}{17}{chapter.3}
-\contentsline {section}{\numberline {3.1}Developed code}{17}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Original Matrix Multiplication (Mult)}{17}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Original Matrix Multiplication By line (MutLine)}{18}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Manual Matrix Multiplication (Mult)}{19}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Manual Matrix Multiplication By line (MultLine)}{20}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Kremlin Matrix Multiplication (Mult)}{21}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Kremlin Matrix Multiplication By line (MultLine)}{22}{subsection.3.1.6}
-\contentsline {subsection}{\numberline {3.1.7}Sequential program compiled and profiled by Kremlin}{23}{subsection.3.1.7}
-\contentsline {section}{\numberline {3.2}Kremlin's Reports}{31}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Kremlin report for Matrix Multiplication, Mult version }{31}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Kremlin report for Matrix Multiplication, MultLine version }{31}{subsection.3.2.2}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Context}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Motivation and Goal}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Structure of the Report}{2}{section.1.3}
+\contentsline {chapter}{\numberline {2}Methodology}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introduction}{3}{section.2.1}
+\contentsline {section}{\numberline {2.2}Research Method}{4}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Deep learn on Kremlin's usage}{5}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Kremlin's application in specific code samples}{5}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Code parallelization with Kremlin's data}{6}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Manually Code parallelization}{6}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Results analysis}{7}{subsection.2.2.5}
+\contentsline {section}{\numberline {2.3}Data collection from executed experiences}{7}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Kremlin's indications reports}{7}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Execution times for the code variations}{8}{subsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.2.1}Original code}{8}{subsubsection.2.3.2.1}
+\contentsline {subsubsection}{\numberline {2.3.2.2}Manual code parallelization}{8}{subsubsection.2.3.2.2}
+\contentsline {subsubsection}{\numberline {2.3.2.3}Kremlin's code parallelization}{8}{subsubsection.2.3.2.3}
+\contentsline {section}{\numberline {2.4}Data analysis method}{8}{section.2.4}
+\contentsline {section}{\numberline {2.5}Data validation}{9}{section.2.5}
+\contentsline {chapter}{\numberline {3}Results and Discussion}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introduction}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}Kremlin's reports}{12}{section.3.2}
+\contentsline {section}{\numberline {3.3}Comparison between Original, Manual and Kremlin}{12}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}The Three groups individually analysed}{13}{subsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.1.1}Original}{13}{subsubsection.3.3.1.1}
+\contentsline {subsubsection}{\numberline {3.3.1.2}Manual}{14}{subsubsection.3.3.1.2}
+\contentsline {subsubsection}{\numberline {3.3.1.3}Kremlin}{16}{subsubsection.3.3.1.3}
+\contentsline {subsubsection}{\numberline {3.3.1.4}Overall review}{17}{subsubsection.3.3.1.4}
+\contentsline {subsection}{\numberline {3.3.2}Measuring the performance's impact using code parallelization}{17}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Comparison between Manual and Original groups}{18}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Comparison between Kremlin and Original groups}{18}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Overall comparison}{19}{subsubsection.3.3.2.3}
+\contentsline {subsection}{\numberline {3.3.3}Comparison between Manual and Kremlin groups}{20}{subsection.3.3.3}
+\contentsline {chapter}{\numberline {4}Conclusion}{23}{chapter.4}
+\contentsline {chapter}{References}{25}{section*.29}
+\contentsline {chapter}{\numberline {5}Appendices}{27}{chapter.5}
+\contentsline {section}{\numberline {5.1}Developed code}{27}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Original Matrix Multiplication (Mult)}{27}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Original Matrix Multiplication By line (MutLine)}{28}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Manual Matrix Multiplication (Mult)}{29}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Manual Matrix Multiplication By line (MultLine)}{30}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Kremlin Matrix Multiplication (Mult)}{31}{subsection.5.1.5}
+\contentsline {subsection}{\numberline {5.1.6}Kremlin Matrix Multiplication By line (MultLine)}{32}{subsection.5.1.6}
+\contentsline {subsection}{\numberline {5.1.7}Sequential program compiled and profiled by Kremlin}{33}{subsection.5.1.7}
+\contentsline {section}{\numberline {5.2}Kremlin's Reports}{41}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Kremlin report for Matrix Multiplication, Mult version }{41}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Kremlin report for Matrix Multiplication, MultLine version }{41}{subsection.5.2.2}
