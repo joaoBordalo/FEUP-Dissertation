@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.21)  27 JUN 2017 18:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.21)  27 JUN 2017 19:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -912,15 +912,21 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <17.28> not available
 
 
 
-]) [5]
+]
+Underfull \vbox (badness 2707) has occurred while \output is active []
+
+ [5])
+[6]
 \openout2 = `04-quote.aux'.
 
+ (./04-quote.tex
+LaTeX Font Info:    Font shape `T1/ptm/bx/sl' in size <10.95> not available
+(Font)              Font shape `T1/ptm/b/sl' tried instead on input line 8.
+) [7
 
-(./04-quote.tex [6
 
 
-
-]) [7] [8
+] [8
 
 
 ] (./01-mieic-en.toc
@@ -1028,7 +1034,7 @@ Chapter 2.
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
-<figures/OpenCL.png, id=507, 514.3215pt x 181.8795pt>
+<figures/OpenCL.png, id=508, 514.3215pt x 181.8795pt>
 File: figures/OpenCL.png Graphic file (type png)
 <use figures/OpenCL.png>
 Package pdftex.def Info: figures/OpenCL.png  used on input line 32. on input li
@@ -1060,7 +1066,7 @@ Chapter 4.
 
 
 ]
-<figures/methodology.png, id=570, 1067.187pt x 452.28975pt>
+<figures/methodology.png, id=571, 1067.187pt x 452.28975pt>
 File: figures/methodology.png Graphic file (type png)
 <use figures/methodology.png>
 Package pdftex.def Info: figures/methodology.png  used on input line 26. on inp
@@ -1082,7 +1088,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [21]
 [22]
-<figures/original.png, id=641, 445.06274pt x 173.448pt>
+<figures/original.png, id=642, 445.06274pt x 173.448pt>
 File: figures/original.png Graphic file (type png)
 <use figures/original.png>
 Package pdftex.def Info: figures/original.png  used on input line 73. on input 
@@ -1090,14 +1096,14 @@ line 73.
 Package pdftex.def Info: Requested size: 341.43437pt x 133.07103pt on input lin
 e 73.
  [23 <./figures/original.png>]
-<figures/manualmul.png, id=650, 549.85425pt x 258.36525pt>
+<figures/manualmul.png, id=651, 549.85425pt x 258.36525pt>
 File: figures/manualmul.png Graphic file (type png)
 <use figures/manualmul.png>
 Package pdftex.def Info: figures/manualmul.png  used on input line 91. on input
  line 91.
 Package pdftex.def Info: Requested size: 384.1096pt x 180.4878pt on input line 
 91.
-<figures/manualmuline.png, id=651, 547.44525pt x 257.16075pt>
+<figures/manualmuline.png, id=652, 547.44525pt x 257.16075pt>
 File: figures/manualmuline.png Graphic file (type png)
 <use figures/manualmuline.png>
 Package pdftex.def Info: figures/manualmuline.png  used on input line 100. on i
@@ -1105,7 +1111,7 @@ nput line 100.
 Package pdftex.def Info: Requested size: 384.1096pt x 180.43507pt on input line
  100.
  [24 <./figures/manualmul.png> <./figures/manualmuline.png>]
-<figures/manualreducedtime.png, id=661, 546.24075pt x 257.16075pt>
+<figures/manualreducedtime.png, id=662, 546.24075pt x 257.16075pt>
 File: figures/manualreducedtime.png Graphic file (type png)
 <use figures/manualreducedtime.png>
 Package pdftex.def Info: figures/manualreducedtime.png  used on input line 111.
@@ -1116,21 +1122,21 @@ e 111.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [25 <./figures/manualreducedtime.png>]
-<figures/kremlinmul.png, id=669, 546.843pt x 256.5585pt>
+<figures/kremlinmul.png, id=670, 546.843pt x 256.5585pt>
 File: figures/kremlinmul.png Graphic file (type png)
 <use figures/kremlinmul.png>
 Package pdftex.def Info: figures/kremlinmul.png  used on input line 133. on inp
 ut line 133.
 Package pdftex.def Info: Requested size: 384.1096pt x 180.21608pt on input line
  133.
-<figures/kremlinmuline.png, id=670, 546.24075pt x 254.1495pt>
+<figures/kremlinmuline.png, id=671, 546.24075pt x 254.1495pt>
 File: figures/kremlinmuline.png Graphic file (type png)
 <use figures/kremlinmuline.png>
 Package pdftex.def Info: figures/kremlinmuline.png  used on input line 142. on 
 input line 142.
 Package pdftex.def Info: Requested size: 384.1096pt x 178.71782pt on input line
  142.
-<figures/kremlinreducedtime.png, id=673, 546.24075pt x 259.56975pt>
+<figures/kremlinreducedtime.png, id=674, 546.24075pt x 259.56975pt>
 File: figures/kremlinreducedtime.png Graphic file (type png)
 <use figures/kremlinreducedtime.png>
 Package pdftex.def Info: figures/kremlinreducedtime.png  used on input line 153
@@ -1139,14 +1145,14 @@ Package pdftex.def Info: Requested size: 384.1096pt x 182.52933pt on input line
  153.
  [26 <./figures/kremlinmul.png> <./figures/kremlinmuline.png>] [27 <./figures/k
 remlinreducedtime.png>]
-<figures/manualoriginal.png, id=690, 584.1825pt x 260.77425pt>
+<figures/manualoriginal.png, id=691, 584.1825pt x 260.77425pt>
 File: figures/manualoriginal.png Graphic file (type png)
 <use figures/manualoriginal.png>
 Package pdftex.def Info: figures/manualoriginal.png  used on input line 180. on
  input line 180.
 Package pdftex.def Info: Requested size: 341.43437pt x 152.419pt on input line 
 180.
-<figures/kremlinoriginal.png, id=693, 582.978pt x 261.3765pt>
+<figures/kremlinoriginal.png, id=694, 582.978pt x 261.3765pt>
 File: figures/kremlinoriginal.png Graphic file (type png)
 <use figures/kremlinoriginal.png>
 Package pdftex.def Info: figures/kremlinoriginal.png  used on input line 195. o
@@ -1154,7 +1160,7 @@ n input line 195.
 Package pdftex.def Info: Requested size: 341.43437pt x 153.08209pt on input lin
 e 195.
  [28 <./figures/manualoriginal.png> <./figures/kremlinoriginal.png>]
-<figures/reducedtimeall.png, id=704, 584.1825pt x 283.65974pt>
+<figures/reducedtimeall.png, id=705, 584.1825pt x 283.65974pt>
 File: figures/reducedtimeall.png Graphic file (type png)
 <use figures/reducedtimeall.png>
 Package pdftex.def Info: figures/reducedtimeall.png  used on input line 211. on
@@ -1170,14 +1176,14 @@ Overfull \hbox (42.68173pt too wide) in paragraph at lines 210--212
 Underfull \vbox (badness 4013) has occurred while \output is active []
 
  [29 <./figures/reducedtimeall.png>]
-<figures/manualkremlinmul.png, id=715, 547.44525pt x 258.36525pt>
+<figures/manualkremlinmul.png, id=716, 547.44525pt x 258.36525pt>
 File: figures/manualkremlinmul.png Graphic file (type png)
 <use figures/manualkremlinmul.png>
 Package pdftex.def Info: figures/manualkremlinmul.png  used on input line 260. 
 on input line 260.
 Package pdftex.def Info: Requested size: 341.43437pt x 161.13884pt on input lin
 e 260.
-<figures/manualkremlinmuline.png, id=716, 546.843pt x 257.763pt>
+<figures/manualkremlinmuline.png, id=717, 546.843pt x 257.763pt>
 File: figures/manualkremlinmuline.png Graphic file (type png)
 <use figures/manualkremlinmuline.png>
 Package pdftex.def Info: figures/manualkremlinmuline.png  used on input line 26
@@ -1185,21 +1191,21 @@ Package pdftex.def Info: figures/manualkremlinmuline.png  used on input line 26
 Package pdftex.def Info: Requested size: 384.1096pt x 181.06216pt on input line
  269.
  [30 <./figures/manualkremlinmul.png>]
-<figures/manualkremlinmulthread.png, id=726, 550.4565pt x 262.581pt>
+<figures/manualkremlinmulthread.png, id=727, 550.4565pt x 262.581pt>
 File: figures/manualkremlinmulthread.png Graphic file (type png)
 <use figures/manualkremlinmulthread.png>
 Package pdftex.def Info: figures/manualkremlinmulthread.png  used on input line
  283. on input line 283.
 Package pdftex.def Info: Requested size: 341.43437pt x 162.87465pt on input lin
 e 283.
-<figures/manualkremlinmulinethread.png, id=727, 546.24075pt x 263.7855pt>
+<figures/manualkremlinmulinethread.png, id=728, 546.24075pt x 263.7855pt>
 File: figures/manualkremlinmulinethread.png Graphic file (type png)
 <use figures/manualkremlinmulinethread.png>
 Package pdftex.def Info: figures/manualkremlinmulinethread.png  used on input l
 ine 292. on input line 292.
 Package pdftex.def Info: Requested size: 384.1096pt x 185.49384pt on input line
  292.
-<figures/manualkremlin8threads.png, id=729, 531.78674pt x 240.29774pt>
+<figures/manualkremlin8threads.png, id=730, 531.78674pt x 240.29774pt>
 File: figures/manualkremlin8threads.png Graphic file (type png)
 <use figures/manualkremlin8threads.png>
 Package pdftex.def Info: figures/manualkremlin8threads.png  used on input line 
@@ -1301,11 +1307,11 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
  ) 
 Here is how much of TeX's memory you used:
- 12101 strings out of 492995
- 178001 string characters out of 6136402
- 537996 words of memory out of 5000000
- 14335 multiletter control sequences out of 15000+600000
- 74361 words of font info for 91 fonts, out of 8000000 for 9000
+ 12105 strings out of 492995
+ 178050 string characters out of 6136402
+ 537997 words of memory out of 5000000
+ 14337 multiletter control sequences out of 15000+600000
+ 77232 words of font info for 93 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,12n,67p,1300b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2017/texm
@@ -1314,13 +1320,13 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/courie
 r/ucrr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c
 :/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2017/tex
-mf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type
-1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8
-a.pfb>
-Output written on 01-mieic-en.pdf (72 pages, 826113 bytes).
+mf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2017/texmf-dist/fonts/type
+1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a
+.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on 01-mieic-en.pdf (72 pages, 839033 bytes).
 PDF statistics:
- 1853 PDF objects out of 2073 (max. 8388607)
- 1716 compressed objects within 18 object streams
+ 1857 PDF objects out of 2073 (max. 8388607)
+ 1719 compressed objects within 18 object streams
  975 named destinations out of 1000 (max. 500000)
  595 words of extra memory for PDF output out of 10000 (max. 10000000)
 
