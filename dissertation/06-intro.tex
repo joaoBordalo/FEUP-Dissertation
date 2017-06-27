@@ -9,14 +9,6 @@ Recently, the computing industry has moved away from exponential scaling of cloc
 
 Combining different computer processing components, such as CPU, GPU Xeon Phi and FPGA, in a single computer system removed some heavy burden in the main processing core, making the computer system with better performance and reliable. However some concerns arose: how to properly use these components without jeopardizing the computer system and application performance. Some processing components can handle specif jobs better then others and combined the computer can achieve a whole new performance level; for instance, the use of a GPU together with a CPU to accelerate deep learning algorithm, analytics, and engineering applications~\cite{NvidiaGPU}, however this kind of utility is not yet well optimized and its utility is only recently emerging.
 
-
-- mencionar multiplicação de matrizes,
--dois algoritmos ligeiramente diferentes para a multiplicação
-
-
-
-
-
 %\section{Projeto} \label{sec:proj}
 
 % Na continuação da secção anterior, e apenas no caso de ser um Projeto
@@ -37,10 +29,50 @@ Combining different computer processing components, such as CPU, GPU Xeon Phi an
 
 \section{Motivation and Goal} \label{sec:goals}
 
-My motivation for this thesis is to advance a little further on the field of the automatic code parallelization  and replace the manual parallelization labor because it requires a lot of time and effort to achieve significant performance.
+My motivation for this thesis is to advance a little further on the field of the automatic code parallelization  and replace the manual parallelization labour because it requires a lot of time and effort to achieve significant performance.
 
 
-\section{Structure of the Report} \label{sec:struct}
+
+\section{Statement of the Problem}
+
+In the filed of achieving the highest possible performance in applications, it could be divided in for levels: hardware components level; transition between hardware and software level, the operative system level; the software level, related to the programming language; and the user level, the applications / program job, algorithms that it uses. The problem this dissertations approaches is related to the software level and the transition between hardware and software level.
+
+Parallelizing code requires getting in touch with the programming language properties, software level, and using threads to make code paralleled, transition level between hardware and software,  since the threads handling is done by the operative system. The real problem is parallelizing code requires a lot of effort, time and knowledge because, firstly,  to apply parallelism, the target application must be analysed in order to find if it is possible to be parallelized. To do this, and if the applications uses complexed algorithms that requires expertise in other fields, such as biologic, mathematics, physics, it requires time to understand the algorithm and, then, if it has blocks that can be parallelized. Secondly, if the target programming language is suited to implement such application in order to take advantage of the parallelism. And, finally, how the parallelism is achievable with out jeopardizing applications result and performance.
+
+In conclusion, it requires a lot of time, effort and knowledge to achieve notable impacts in applications' performance, since it is made manually.
+
+
+\section{Purpose of the Work}
+
+Applying parallel methods requires a lot because there is to many factors an variables to take in to account and this is done manually.
+
+The purpose of this dissertation is to find patterns and what  variables makes the code parallelizable  and find what exists in the state of art, and their performance impact, that helps in achieving one step closer to the automatic parallelization. 
+
+\section{Significance of the Work}
+
+Making parallel code increases applications performance and, if making code paralleled  was a possible future, that would increase applications performance and. as well, increase developers performance in building applications and solutions efficiently because it would spare time and effort.
+
+With this dissertation it is hopped that attaining automatic ways to parallelize code is achievable and prove that code being parallelized automatically is viable and trustworthy in term of performance, results and speed.
+
+
+\section{Research Hypothesis}
+
+This dissertations pretends to state that, in first place, parallelizing code is worth using and achieves grreat results in terms of performance. Secondly, automatically parallelizing code is possible and thirdly, has almost, if not, the same results as doing it manually. Additionally, this work pretends, as well, to state that Kremlin tool is an excellent starting point to make parallel code automatically. 
+
+\section{Research Questions}
+
+The aim of this research is to find and answer for the following questions:
+
+\begin{itemize}
+	\item Is it possible to achieve high performance level in applications in an automatic way?
+	\item If so, how can it be achievable? Can it totally replace an expert?
+	\item Since exists tools, like Kremlin, which help to, automatically, parallelize code, how acceptable are their results?
+	\item How this specific tool can help in getting one step closer to automatic code parallelization?
+	\item In which way can Kremlin be better than an expert?
+\end{itemize}
+
+
+\section{Dissertation's Structure} \label{sec:struct}
 
 % Para além da introdução, esta dissertação contém mais x capítulos.
 % No capítulo~\ref{chap:sota}, é descrito o estado da arte e são
@@ -53,6 +85,37 @@ My motivation for this thesis is to advance a little further on the field of the
 % consectetuer, dui elit scelerisque augue, eu vehicula nibh nisi ac
 % est. 
 
-This report is divided in three more chapters. The next one is called \textit{Achieving the Highest Processing Power}, and it is related to the state of the art of my thesis' scope. In this chapter there are three sections. The first section is related to to the context of the state of the art in the filed. The other two sections are two different but complementary approaches which help and describe the state of the art. 
+This dissertation is divided in seven chapters:
 
-The third chapter addresses the problem involved in my thesis and how I propose to solve it, including the approach, the methodology and solution's validation. The last chapter  includes final consideration related to the work developed so far in \textit{Preparação da Dissertação} course, expected results with my proposed solution and work plan to develop the solution. In the end of this report there are the references used to develop this report.
+\begin{enumerate}
+	\item \textbf{Introduction}~\ref{chap:intro}
+
+This addresses the overall context of my dissertation, motivation and goal of the developed work, what is the problem, the purpose of the work, th impact that this work will have, the hypothesis that this research wants to prove, the questions behind the research and how this dissertation is structured.
+
+	\item \textbf{Achieving the Highest Processing Power}~\ref{chap:sota1}
+	
+This chapter is the state of the art of my thesis' scope and establishes the information, knowledge and work developed so far. In this chapter there are three sections. The first section is related to the context of the state of the art in the filed. The other two sections are two different but complementary approaches which help and describe the state of the art. 	
+
+	\item \textbf{Matrix Multiplication}~\ref{chap:sota2}
+	
+Still related to this dissertation state of the art, in this chapter it will presented and overview about the current state of the art for matrix multiplications, more specifically, two possible algorithms, their pseudo code, vantages and disadvantages. So, this chapter is divided in three sections: Matrix multiplication overview, Matrix multiplication generic algorithm and Matrix multiplication by line algorithm.
+	
+	\item \textbf{Methodology}~\ref{chap:chap4}
+
+The Methodology chapter explains how the work will unfold, starting with the followed steps, executes experiences and what data was obtained and how this data will be analysed a validated. So, this chapter is divided in four sections: Research method, Data collection from conducted experiences, Data analysis method and Data validation.
+
+	\item \textbf{Results and Discussion}~\ref{chap:chap5}
+	
+In this chapter is explained, in detail, the results obtained from all conducted experiences and the meaning and conclusions drawn from each one, the relation between them and the overall impact. So, this chapter is divided in two parts: firstly the analysis made from Kremlin's report and the comparison between Original code, Manual parallized code by an expert and Kremlin's indications to parallize code using the data from Kremlin's report.
+	
+	\item \textbf{Conclusion}~\ref{chap:chap6}
+
+To sum up the work and reinforce the arguments the Conclusion chapter is divided in two sections: General conclusions and Future work. In General Conclusions section, is described the conclusion of each experiment and the overall conclusion for the experiences and the relation with the research hypothesis and the answer for the questions made. In the Future work section is presented what could be the next step and what can be done with the developed work made in this dissertation. 
+
+	%\item References
+	\item \textbf{Appendices}~\ref{ap1:general}
+	
+The last chapter of this dissertation, Appendices, presents, in two sections, the code developed for the conducted experiences and, for the second section, the information provided from Kremlin's report.
+
+\end{enumerate}
+
