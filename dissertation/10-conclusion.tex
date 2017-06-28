@@ -1,3 +1,40 @@
 \chapter{Conclusion}\label{chap:chap6}
 
 \section*{}
+
+Before verifying if parallel code made in an automatic way is a reality, first it is important to verify if making code parallel is viable. And to prove that, the experiments in~\ref{subsec:measureparallel} in shows that the performance is far greater for the bigger the size of the input data, under the hardware components capabilities.
+Since it was established the viability of making code parallel,it is now possible to focus on the goal of this dissertation. So, the main goal of this dissertations is to find the viability on making parallel code automatically. For that purpose, and mentioned in ~\ref{chap:sota1}, it was necessary to know what were the basis, common mind set, knowledge's course, developments and future thoughts on this field. Proving that it is viable, the next course of action is finding how can it be made. One way to do it is using Kremlin's help. Kremlin not only proved assistance but also answered in one possible way to automatically make code parallel, for this case it is two circumstances: firstly, locating possibility parallizable blocks, which most likely are \textit{for} loops, and, secondly, measuring the impact of these blocks imagining if they were parallelized. 
+
+However, and although Kremlin is a powerful tool to advice one of the most important jobs when parallelizing code, location of parallelizable blocks, it isn't perfect and has its own limitations:
+
+\begin{itemize}
+	\item Can't use data structures from the \textit{Standard Library}, such as, stack, list, priority queue, queue, list, hash table, map, multimap, heap, etc.;
+	\item Compiling programs that have a deep function call level greater that seven;
+	\item Can't detect \textit{for} loops if the iterator iterator variable used isn't define outside of the loop;
+	\item When dealing with inner \textit{for} loops, it just detects the block, instead of pointing which loop should be parallelized.
+\end{itemize}
+
+During the conducted experience, when learning how to take the best profit from Kremlin and when collecting data from the performed experiences mentioned in the previous chapter, those where the problems found and the struggles that required to be overcomed.
+
+For now, the location of a parallelizable block and the viability of this block being parallel in terms of performance are the patterns found for doing code parallel. Another aspect found when conducting the experiments is the number of threads used in function of the size of the data. For a big size of data, the higher the number of threads used, the performance was better. However, there is the limitations in hardware components, such as cache and RAM memory, the power of the processor, including the number of threads it can use.
+
+These were the main aspects detected during these experimented and in the following sections it is justified the reasoning behind these choices.
+
+\section{Using Kremlin for code parallelization}
+
+In~\ref{sec:kremlinreport} it is analysed the information given by Kremlin's report. Adding to this information the analysis of the results made in~\ref{sec:compareall}, we can conclude Kremlin provided accurate and correct information. Even in the case of the parallelization of those matrix initialization blocks, Kremlin detected a low impact in performance and, according to the results, it had almost no impact at all.
+
+
+For future reference, Kremlin is a powerful tool to help experts in identifying potential parallelizable blocks and measuring the quality of its performance in case being parallelized.  
+
+\section{Automatic Parallelization is viable}
+
+From the conducted experiments in~\ref{sec:compareall} and joining the information provided from Kremlin's report, it was proved and concluded that automatic parallelization is possible, viable, accurate and, the main purpose, spares time and efforts for the developer side. Although it still required expertise to understand and available the data provided, this is the first step in order to make automatic code parallelization even better. The time I used to follow Kremlin's instructions form the report was really small compared to the one used to manually parallelized the same code. Even doing the manual part first and using the knowledge from that time, it was still faster because I could skip the phase of detecting parallelizable code and evaliation of its relevance.
+
+\section{Future work}
+
+For the future, this work could be used as an orientation for the next steps. Those steps could be finding more patterns and variables; Using Kremlin information and number of threads according to the input data size, making a profile for this application to fin the bet performance; and, for the finale stage, rewrite applications code with these informations coming form the profiler, so that the application can have the best performance possible.
+
+
+
+

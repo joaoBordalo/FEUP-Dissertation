@@ -21,43 +21,47 @@
 \BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 OpenMP}{section.2.3}% 21
 \BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 Kremlin}{section.2.3}% 22
 \BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 Kismet}{section.2.3}% 23
-\BOOKMARK [1][-]{section.2.4}{2.4 Overview}{chapter.2}% 24
-\BOOKMARK [0][-]{chapter.3}{3 Matrix Multiplication}{}% 25
-\BOOKMARK [1][-]{section.3.1}{3.1 Introduction}{chapter.3}% 26
-\BOOKMARK [1][-]{section.3.2}{3.2 Using Computers' Heterogeneous Components}{chapter.3}% 27
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 OpenCL}{section.3.2}% 28
-\BOOKMARK [1][-]{section.3.3}{3.3 Overview}{chapter.3}% 29
-\BOOKMARK [0][-]{chapter.4}{4 Methodology}{}% 30
-\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 31
-\BOOKMARK [1][-]{section.4.2}{4.2 Research Method}{chapter.4}% 32
-\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Deep learn on Kremlin's usage}{section.4.2}% 33
-\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Kremlin's application in specific code samples}{section.4.2}% 34
-\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Code parallelization with Kremlin's data}{section.4.2}% 35
-\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 Manually Code parallelization}{section.4.2}% 36
-\BOOKMARK [2][-]{subsection.4.2.5}{4.2.5 Results analysis}{section.4.2}% 37
-\BOOKMARK [1][-]{section.4.3}{4.3 Data collection from conducted experiences}{chapter.4}% 38
-\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Kremlin's indications reports}{section.4.3}% 39
-\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Execution times for the code variations}{section.4.3}% 40
-\BOOKMARK [1][-]{section.4.4}{4.4 Data analysis method}{chapter.4}% 41
-\BOOKMARK [1][-]{section.4.5}{4.5 Data validation}{chapter.4}% 42
-\BOOKMARK [0][-]{chapter.5}{5 Results and Discussion}{}% 43
-\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 44
-\BOOKMARK [1][-]{section.5.2}{5.2 Kremlin's reports}{chapter.5}% 45
-\BOOKMARK [1][-]{section.5.3}{5.3 Comparison between Original, Manual and Kremlin}{chapter.5}% 46
-\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 The Three groups individually analysed}{section.5.3}% 47
-\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Measuring the performance's impact using code parallelization}{section.5.3}% 48
-\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Comparison between Manual and Kremlin groups}{section.5.3}% 49
-\BOOKMARK [0][-]{chapter.6}{6 Conclusion}{}% 50
-\BOOKMARK [0][-]{section*.34}{References}{}% 51
-\BOOKMARK [0][-]{chapter.7}{7 Appendices}{}% 52
-\BOOKMARK [1][-]{section.7.1}{7.1 Developed code}{chapter.7}% 53
-\BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 Original Matrix Multiplication \(Mult\)}{section.7.1}% 54
-\BOOKMARK [2][-]{subsection.7.1.2}{7.1.2 Original Matrix Multiplication By line \(MutLine\)}{section.7.1}% 55
-\BOOKMARK [2][-]{subsection.7.1.3}{7.1.3 Manual Matrix Multiplication \(Mult\)}{section.7.1}% 56
-\BOOKMARK [2][-]{subsection.7.1.4}{7.1.4 Manual Matrix Multiplication By line \(MultLine\)}{section.7.1}% 57
-\BOOKMARK [2][-]{subsection.7.1.5}{7.1.5 Kremlin Matrix Multiplication \(Mult\)}{section.7.1}% 58
-\BOOKMARK [2][-]{subsection.7.1.6}{7.1.6 Kremlin Matrix Multiplication By line \(MultLine\)}{section.7.1}% 59
-\BOOKMARK [2][-]{subsection.7.1.7}{7.1.7 Sequential program compiled and profiled by Kremlin}{section.7.1}% 60
-\BOOKMARK [1][-]{section.7.2}{7.2 Kremlin's Reports}{chapter.7}% 61
-\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 Kremlin report for Matrix Multiplication, Mult version }{section.7.2}% 62
-\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 Kremlin report for Matrix Multiplication, MultLine version }{section.7.2}% 63
+\BOOKMARK [2][-]{subsection.2.3.4}{2.3.4 Atune-IL}{section.2.3}% 24
+\BOOKMARK [1][-]{section.2.4}{2.4 Overview}{chapter.2}% 25
+\BOOKMARK [0][-]{chapter.3}{3 Matrix Multiplication}{}% 26
+\BOOKMARK [1][-]{section.3.1}{3.1 Introduction}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.2}{3.2 Classic Algorithm\)}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.3}{3.3 In Line Algorithm}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.4}{3.4 Overview}{chapter.3}% 30
+\BOOKMARK [0][-]{chapter.4}{4 Methodology}{}% 31
+\BOOKMARK [1][-]{section.4.1}{4.1 Introduction}{chapter.4}% 32
+\BOOKMARK [1][-]{section.4.2}{4.2 Research Method}{chapter.4}% 33
+\BOOKMARK [2][-]{subsection.4.2.1}{4.2.1 Deep learn on Kremlin's usage}{section.4.2}% 34
+\BOOKMARK [2][-]{subsection.4.2.2}{4.2.2 Kremlin's application in specific code samples}{section.4.2}% 35
+\BOOKMARK [2][-]{subsection.4.2.3}{4.2.3 Code parallelization with Kremlin's data}{section.4.2}% 36
+\BOOKMARK [2][-]{subsection.4.2.4}{4.2.4 Manually Code parallelization}{section.4.2}% 37
+\BOOKMARK [2][-]{subsection.4.2.5}{4.2.5 Results analysis}{section.4.2}% 38
+\BOOKMARK [1][-]{section.4.3}{4.3 Data collection from conducted experiences}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.3.1}{4.3.1 Kremlin's indications reports}{section.4.3}% 40
+\BOOKMARK [2][-]{subsection.4.3.2}{4.3.2 Execution times for the code variations}{section.4.3}% 41
+\BOOKMARK [1][-]{section.4.4}{4.4 Data analysis method}{chapter.4}% 42
+\BOOKMARK [1][-]{section.4.5}{4.5 Data validation}{chapter.4}% 43
+\BOOKMARK [0][-]{chapter.5}{5 Results and Discussion}{}% 44
+\BOOKMARK [1][-]{section.5.1}{5.1 Introduction}{chapter.5}% 45
+\BOOKMARK [1][-]{section.5.2}{5.2 Kremlin's reports}{chapter.5}% 46
+\BOOKMARK [1][-]{section.5.3}{5.3 Comparison between Original, Manual and Kremlin}{chapter.5}% 47
+\BOOKMARK [2][-]{subsection.5.3.1}{5.3.1 The Three groups individually analysed}{section.5.3}% 48
+\BOOKMARK [2][-]{subsection.5.3.2}{5.3.2 Measuring the performance's impact using code parallelization}{section.5.3}% 49
+\BOOKMARK [2][-]{subsection.5.3.3}{5.3.3 Comparison between Manual and Kremlin groups}{section.5.3}% 50
+\BOOKMARK [0][-]{chapter.6}{6 Conclusion}{}% 51
+\BOOKMARK [1][-]{section.6.1}{6.1 Using Kremlin for code parallelization}{chapter.6}% 52
+\BOOKMARK [1][-]{section.6.2}{6.2 Automatic Parallelization is viable}{chapter.6}% 53
+\BOOKMARK [1][-]{section.6.3}{6.3 Future work}{chapter.6}% 54
+\BOOKMARK [0][-]{section*.35}{References}{}% 55
+\BOOKMARK [0][-]{chapter.7}{7 Appendices}{}% 56
+\BOOKMARK [1][-]{section.7.1}{7.1 Developed code}{chapter.7}% 57
+\BOOKMARK [2][-]{subsection.7.1.1}{7.1.1 Original Matrix Multiplication \(Mult\)}{section.7.1}% 58
+\BOOKMARK [2][-]{subsection.7.1.2}{7.1.2 Original Matrix Multiplication By line \(MutLine\)}{section.7.1}% 59
+\BOOKMARK [2][-]{subsection.7.1.3}{7.1.3 Manual Matrix Multiplication \(Mult\)}{section.7.1}% 60
+\BOOKMARK [2][-]{subsection.7.1.4}{7.1.4 Manual Matrix Multiplication By line \(MultLine\)}{section.7.1}% 61
+\BOOKMARK [2][-]{subsection.7.1.5}{7.1.5 Kremlin Matrix Multiplication \(Mult\)}{section.7.1}% 62
+\BOOKMARK [2][-]{subsection.7.1.6}{7.1.6 Kremlin Matrix Multiplication By line \(MultLine\)}{section.7.1}% 63
+\BOOKMARK [2][-]{subsection.7.1.7}{7.1.7 Sequential program compiled and profiled by Kremlin}{section.7.1}% 64
+\BOOKMARK [1][-]{section.7.2}{7.2 Kremlin's Reports}{chapter.7}% 65
+\BOOKMARK [2][-]{subsection.7.2.1}{7.2.1 Kremlin report for Matrix Multiplication, Mult version }{section.7.2}% 66
+\BOOKMARK [2][-]{subsection.7.2.2}{7.2.2 Kremlin report for Matrix Multiplication, MultLine version }{section.7.2}% 67

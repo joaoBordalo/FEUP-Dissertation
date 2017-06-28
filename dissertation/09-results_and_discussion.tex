@@ -13,7 +13,7 @@ Focusing these question to the field of code parallelization, more will rise, no
 In order to answer all previous questions, this chapter is divided in two main sections: the first section is related to the Kremlin's activity and how is it helpful. The second section is the confrontation of all the gathered data to verify what is better and how can it contribute to the future of automatic code parallelization. 
 
 
-\section{Kremlin's reports}
+\section{Kremlin's reports}\label{sec:kremlinreport}
 
 When Kremlin compiles and profiles a sequential code, it provides a report with locations of the blocks that can be parallelized. Additional it gives some values that indicates the theoretical gain if the parallelization is implemented.
 
@@ -52,7 +52,7 @@ In both reports, the high percentage of the reduced time and time reduced means 
 Taking a close look in the others blocks, their locations refers to the matrices initialization and the values of timed reduced and ideal timed reduced are really low, around 3\% in both implementations, which means that the improved performance is insignificant and might cause delay in during de applications executions. However, this situations is confirmed in the next section. 
 
 
-\section{Comparison between Original, Manual and Kremlin}
+\section{Comparison between Original, Manual and Kremlin}\label{sec:compareall}
 
 The previous section has an important role because the reports credibility and correctness influences the the results in this chapter, consequently, could lead to misguided and wrong conclusions. Since the report gave correct feedback and it is well justified, the following values are valid.
 
@@ -162,7 +162,7 @@ Additionally, and for the same reason, Figure~\ref{fig:kremlinreducedtime} also 
 
 Through the analysis of these three tests groups, separately, and since these groups were tested under the same circumstances, it is possible to conclude that using these versions of the matrix multiplication algorithm do not jeopardize the results, since they have similar behaviours, moreover, they increase assurance and credibility for the following up analysis and conclusions. It is because of the similarity of behaviours that this comparison is valid and correct, even so the performance is different, which was expected, as explained before.
 
-\subsection{Measuring the performance's impact using code parallelization}
+\subsection{Measuring the performance's impact using code parallelization}\label{subsec:measureparallel}
 
 The conducted analysis presented in previous section explains the characteristics of each group and the plausible connection with each other. To quantify how beneficial can code parallelization be, the next sub sub sections will prove its impact. 
 

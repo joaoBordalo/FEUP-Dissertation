@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.21)  27 JUN 2017 19:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/W32TeX) (preloaded format=pdflatex 2017.6.21)  28 JUN 2017 11:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -741,12 +741,8 @@ Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 ) (./01-mieic-en.aux
 (./02-abstract_en.aux) (./03-acknows_en.aux) (./04-quote.aux)
 (./05-abbrevs_en.aux) (./06-intro.aux) (./07-sota_chapter_1.aux)
-(./07-sota_chapter_2.aux
-
-LaTeX Warning: Label `fig:opcl' multiply defined.
-
-) (./08-methodology.aux) (./09-results_and_discussion.aux) (./10-conclusion.aux
-) (./11-appendix1.aux))
+(./07-sota_chapter_2.aux) (./08-methodology.aux)
+(./09-results_and_discussion.aux) (./10-conclusion.aux) (./11-appendix1.aux))
 \openout1 = `01-mieic-en.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
@@ -764,7 +760,8 @@ LaTeX Font Info:    ... okay on input line 96.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
 LaTeX Font Info:    ... okay on input line 96.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 96.
- (c:/texlive/2017/texmf-dist/tex/latex/psnfss/t1ptm.fd
+
+(c:/texlive/2017/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
 *geometry* driver: auto-detecting
@@ -865,7 +862,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 133.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <24.88> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 133.
-<figures/uporto-feup.pdf, id=257, pagebox=cropbox, 338.26375pt x 126.4725pt>
+<figures/uporto-feup.pdf, id=273, pagebox=cropbox, 338.26375pt x 126.4725pt>
 File: figures/uporto-feup.pdf Graphic file (type pdf)
 <use figures/uporto-feup.pdf>
 Package pdftex.def Info: figures/uporto-feup.pdf  used on input line 133. on in
@@ -1034,50 +1031,200 @@ Chapter 2.
 ]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 24.
-<figures/OpenCL.png, id=508, 514.3215pt x 181.8795pt>
+<figures/OpenCL.png, id=530, 514.3215pt x 181.8795pt>
 File: figures/OpenCL.png Graphic file (type png)
 <use figures/OpenCL.png>
 Package pdftex.def Info: figures/OpenCL.png  used on input line 32. on input li
 ne 32.
 Package pdftex.def Info: Requested size: 426.79135pt x 150.92664pt on input lin
 e 32.
- [6 <./figures/OpenCL.png>] [7] [8]) [9]
+ [6 <./figures/OpenCL.png>] [7]
+Underfull \vbox (badness 2922) has occurred while \output is active []
+
+ [8]
+[9]) [10]
 \openout2 = `07-sota_chapter_2.aux'.
 
- (./07-sota_chapter_2.tex [10
+ (./07-sota_chapter_2.tex
+Chapter 3.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.27 	\item [C_{ij}]
+                     Resulting matrix from matrix multiplication between A a...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.27 	\item [C_{ij}]
+                     Resulting matrix from matrix multiplication between A a...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.28 	\item [(AB)_{ij}]
+                        matrix multiplication between A and B;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.28 	\item [(AB)_{ij}]
+                        matrix multiplication between A and B;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[11
 
 
 
 ]
-Chapter 3.
-File: figures/OpenCL.png Graphic file (type png)
-<use figures/OpenCL.png>
-Package pdftex.def Info: figures/OpenCL.png  used on input line 21. on input li
-ne 21.
-Package pdftex.def Info: Requested size: 426.79135pt x 150.92664pt on input lin
-e 21.
-) [11] [12]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.30 	\item [a_{ik}]
+                     Element from line i and column k belonging to Matrix A;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.30 	\item [a_{ik}]
+                     Element from line i and column k belonging to Matrix A;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.31 	\item [b_{kj}]
+                     Element from line k and column j belonging to matrix B.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.31 	\item [b_{kj}]
+                     Element from line k and column j belonging to matrix B.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+<figures/esquemamult.png, id=593, 310.15875pt x 215.6055pt>
+File: figures/esquemamult.png Graphic file (type png)
+<use figures/esquemamult.png>
+Package pdftex.def Info: figures/esquemamult.png  used on input line 39. on inp
+ut line 39.
+Package pdftex.def Info: Requested size: 298.75264pt x 207.67638pt on input lin
+e 39.
+LaTeX Font Info:    Try loading font information for T1+pcrs on input line 48.
+(c:/texlive/2017/texmf-dist/tex/latex/courier-scaled/t1pcrs.fd
+File: t1pcrs.fd 2004/07/09 scalable font definitions for T1/pcrs.
+)
+LaTeX Font Info:    Font shape `T1/pcrs/m/n' will be
+(Font)              scaled to size 7.59998pt on input line 48.
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 51.
+ [12 <./figures/esquemamult.png>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.69 	\item [C_{ij}]
+                     Resulting matrix from matrix multiplication between A a...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.69 	\item [C_{ij}]
+                     Resulting matrix from matrix multiplication between A a...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.70 	\item [(AB)_{ij}]
+                        matrix multiplication between A and B;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.70 	\item [(AB)_{ij}]
+                        matrix multiplication between A and B;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.72 	\item [a_{ik}]
+                     Element from line i and column k belonging to Matrix A;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.72 	\item [a_{ik}]
+                     Element from line i and column k belonging to Matrix A;
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.73 	\item [b_{kj}]
+                     Element from line k and column j belonging to matrix B.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.73 	\item [b_{kj}]
+                     Element from line k and column j belonging to matrix B.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+<figures/esquemamultline.png, id=614, 326.4195pt x 241.50224pt>
+File: figures/esquemamultline.png Graphic file (type png)
+<use figures/esquemamultline.png>
+Package pdftex.def Info: figures/esquemamultline.png  used on input line 81. on
+ input line 81.
+Package pdftex.def Info: Requested size: 298.75264pt x 221.0387pt on input line
+ 81.
+[13 <./figures/esquemamultline.png>]) [14]
 \openout2 = `08-methodology.aux'.
 
  (./08-methodology.tex
 Chapter 4.
-[13
+[15
 
 
 
 ]
-<figures/methodology.png, id=571, 1067.187pt x 452.28975pt>
+<figures/methodology.png, id=643, 1067.187pt x 452.28975pt>
 File: figures/methodology.png Graphic file (type png)
 <use figures/methodology.png>
 Package pdftex.def Info: figures/methodology.png  used on input line 26. on inp
 ut line 26.
 Package pdftex.def Info: Requested size: 426.79135pt x 180.88509pt on input lin
 e 26.
- [14 <./figures/methodology.png>] [15] [16] [17] [18]) [19]
+ [16 <./figures/methodology.png>] [17] [18] [19] [20]) [21]
 \openout2 = `09-results_and_discussion.aux'.
 
 
-(./09-results_and_discussion.tex [20
+(./09-results_and_discussion.tex [22
 
 
 
@@ -1086,32 +1233,32 @@ Chapter 5.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21]
-[22]
-<figures/original.png, id=642, 445.06274pt x 173.448pt>
+ [23]
+[24]
+<figures/original.png, id=715, 445.06274pt x 173.448pt>
 File: figures/original.png Graphic file (type png)
 <use figures/original.png>
 Package pdftex.def Info: figures/original.png  used on input line 73. on input 
 line 73.
 Package pdftex.def Info: Requested size: 341.43437pt x 133.07103pt on input lin
 e 73.
- [23 <./figures/original.png>]
-<figures/manualmul.png, id=651, 549.85425pt x 258.36525pt>
+ [25 <./figures/original.png>]
+<figures/manualmul.png, id=723, 549.85425pt x 258.36525pt>
 File: figures/manualmul.png Graphic file (type png)
 <use figures/manualmul.png>
 Package pdftex.def Info: figures/manualmul.png  used on input line 91. on input
  line 91.
 Package pdftex.def Info: Requested size: 384.1096pt x 180.4878pt on input line 
 91.
-<figures/manualmuline.png, id=652, 547.44525pt x 257.16075pt>
+<figures/manualmuline.png, id=724, 547.44525pt x 257.16075pt>
 File: figures/manualmuline.png Graphic file (type png)
 <use figures/manualmuline.png>
 Package pdftex.def Info: figures/manualmuline.png  used on input line 100. on i
 nput line 100.
 Package pdftex.def Info: Requested size: 384.1096pt x 180.43507pt on input line
  100.
- [24 <./figures/manualmul.png> <./figures/manualmuline.png>]
-<figures/manualreducedtime.png, id=662, 546.24075pt x 257.16075pt>
+ [26 <./figures/manualmul.png> <./figures/manualmuline.png>]
+<figures/manualreducedtime.png, id=734, 546.24075pt x 257.16075pt>
 File: figures/manualreducedtime.png Graphic file (type png)
 <use figures/manualreducedtime.png>
 Package pdftex.def Info: figures/manualreducedtime.png  used on input line 111.
@@ -1121,46 +1268,46 @@ e 111.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [25 <./figures/manualreducedtime.png>]
-<figures/kremlinmul.png, id=670, 546.843pt x 256.5585pt>
+ [27 <./figures/manualreducedtime.png>]
+<figures/kremlinmul.png, id=742, 546.843pt x 256.5585pt>
 File: figures/kremlinmul.png Graphic file (type png)
 <use figures/kremlinmul.png>
 Package pdftex.def Info: figures/kremlinmul.png  used on input line 133. on inp
 ut line 133.
 Package pdftex.def Info: Requested size: 384.1096pt x 180.21608pt on input line
  133.
-<figures/kremlinmuline.png, id=671, 546.24075pt x 254.1495pt>
+<figures/kremlinmuline.png, id=743, 546.24075pt x 254.1495pt>
 File: figures/kremlinmuline.png Graphic file (type png)
 <use figures/kremlinmuline.png>
 Package pdftex.def Info: figures/kremlinmuline.png  used on input line 142. on 
 input line 142.
 Package pdftex.def Info: Requested size: 384.1096pt x 178.71782pt on input line
  142.
-<figures/kremlinreducedtime.png, id=674, 546.24075pt x 259.56975pt>
+<figures/kremlinreducedtime.png, id=746, 546.24075pt x 259.56975pt>
 File: figures/kremlinreducedtime.png Graphic file (type png)
 <use figures/kremlinreducedtime.png>
 Package pdftex.def Info: figures/kremlinreducedtime.png  used on input line 153
 . on input line 153.
 Package pdftex.def Info: Requested size: 384.1096pt x 182.52933pt on input line
  153.
- [26 <./figures/kremlinmul.png> <./figures/kremlinmuline.png>] [27 <./figures/k
+ [28 <./figures/kremlinmul.png> <./figures/kremlinmuline.png>] [29 <./figures/k
 remlinreducedtime.png>]
-<figures/manualoriginal.png, id=691, 584.1825pt x 260.77425pt>
+<figures/manualoriginal.png, id=764, 584.1825pt x 260.77425pt>
 File: figures/manualoriginal.png Graphic file (type png)
 <use figures/manualoriginal.png>
 Package pdftex.def Info: figures/manualoriginal.png  used on input line 180. on
  input line 180.
 Package pdftex.def Info: Requested size: 341.43437pt x 152.419pt on input line 
 180.
-<figures/kremlinoriginal.png, id=694, 582.978pt x 261.3765pt>
+<figures/kremlinoriginal.png, id=767, 582.978pt x 261.3765pt>
 File: figures/kremlinoriginal.png Graphic file (type png)
 <use figures/kremlinoriginal.png>
 Package pdftex.def Info: figures/kremlinoriginal.png  used on input line 195. o
 n input line 195.
 Package pdftex.def Info: Requested size: 341.43437pt x 153.08209pt on input lin
 e 195.
- [28 <./figures/manualoriginal.png> <./figures/kremlinoriginal.png>]
-<figures/reducedtimeall.png, id=705, 584.1825pt x 283.65974pt>
+ [30 <./figures/manualoriginal.png> <./figures/kremlinoriginal.png>]
+<figures/reducedtimeall.png, id=777, 584.1825pt x 283.65974pt>
 File: figures/reducedtimeall.png Graphic file (type png)
 <use figures/reducedtimeall.png>
 Package pdftex.def Info: figures/reducedtimeall.png  used on input line 211. on
@@ -1175,99 +1322,81 @@ Overfull \hbox (42.68173pt too wide) in paragraph at lines 210--212
 
 Underfull \vbox (badness 4013) has occurred while \output is active []
 
- [29 <./figures/reducedtimeall.png>]
-<figures/manualkremlinmul.png, id=716, 547.44525pt x 258.36525pt>
+ [31 <./figures/reducedtimeall.png>]
+<figures/manualkremlinmul.png, id=787, 547.44525pt x 258.36525pt>
 File: figures/manualkremlinmul.png Graphic file (type png)
 <use figures/manualkremlinmul.png>
 Package pdftex.def Info: figures/manualkremlinmul.png  used on input line 260. 
 on input line 260.
 Package pdftex.def Info: Requested size: 341.43437pt x 161.13884pt on input lin
 e 260.
-<figures/manualkremlinmuline.png, id=717, 546.843pt x 257.763pt>
+<figures/manualkremlinmuline.png, id=788, 546.843pt x 257.763pt>
 File: figures/manualkremlinmuline.png Graphic file (type png)
 <use figures/manualkremlinmuline.png>
 Package pdftex.def Info: figures/manualkremlinmuline.png  used on input line 26
 9. on input line 269.
 Package pdftex.def Info: Requested size: 384.1096pt x 181.06216pt on input line
  269.
- [30 <./figures/manualkremlinmul.png>]
-<figures/manualkremlinmulthread.png, id=727, 550.4565pt x 262.581pt>
+ [32 <./figures/manualkremlinmul.png>]
+<figures/manualkremlinmulthread.png, id=798, 550.4565pt x 262.581pt>
 File: figures/manualkremlinmulthread.png Graphic file (type png)
 <use figures/manualkremlinmulthread.png>
 Package pdftex.def Info: figures/manualkremlinmulthread.png  used on input line
  283. on input line 283.
 Package pdftex.def Info: Requested size: 341.43437pt x 162.87465pt on input lin
 e 283.
-<figures/manualkremlinmulinethread.png, id=728, 546.24075pt x 263.7855pt>
+<figures/manualkremlinmulinethread.png, id=799, 546.24075pt x 263.7855pt>
 File: figures/manualkremlinmulinethread.png Graphic file (type png)
 <use figures/manualkremlinmulinethread.png>
 Package pdftex.def Info: figures/manualkremlinmulinethread.png  used on input l
 ine 292. on input line 292.
 Package pdftex.def Info: Requested size: 384.1096pt x 185.49384pt on input line
  292.
-<figures/manualkremlin8threads.png, id=730, 531.78674pt x 240.29774pt>
+<figures/manualkremlin8threads.png, id=801, 531.78674pt x 240.29774pt>
 File: figures/manualkremlin8threads.png Graphic file (type png)
 <use figures/manualkremlin8threads.png>
 Package pdftex.def Info: figures/manualkremlin8threads.png  used on input line 
 302. on input line 302.
 Package pdftex.def Info: Requested size: 426.79135pt x 192.85445pt on input lin
 e 302.
- [31 <./figures/manualkremlinmuline.png> <./figures/manualkremlinmulthread.png>
-]) [32 <./figures/manualkremlinmulinethread.png> <./figures/manualkremlin8threa
+ [33 <./figures/manualkremlinmuline.png> <./figures/manualkremlinmulthread.png>
+]) [34 <./figures/manualkremlinmulinethread.png> <./figures/manualkremlin8threa
 ds.png>]
 \openout2 = `10-conclusion.aux'.
 
 
 (./10-conclusion.tex
 Chapter 6.
-) [33
+[35
 
 
 
-] [34
-
-
-] (./01-mieic-en.bbl (./01-mieic-en.brf)
+]) [36] (./01-mieic-en.bbl (./01-mieic-en.brf)
 \tf@brf=\write7
 \openout7 = `01-mieic-en.brf'.
 
-) [35
+ [37
 
-]
+
+
+]) [38]
 \openout2 = `11-appendix1.aux'.
 
- (./11-appendix1.tex
-[36
 
-
-]
+(./11-appendix1.tex
 Chapter 7.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 8.
-(./codes/matrixmul.cpp
-LaTeX Font Info:    Try loading font information for T1+pcrs on input line 217.
+(./codes/matrixmul.cpp [39
 
 
-(c:/texlive/2017/texmf-dist/tex/latex/courier-scaled/t1pcrs.fd
-File: t1pcrs.fd 2004/07/09 scalable font definitions for T1/pcrs.
-)
-LaTeX Font Info:    Font shape `T1/pcrs/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 217.
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 222.
- [37]
+]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 262.
-)
-(./codes/matrixmul.cpp [38]) (./codes/matrixmul.cpp [39])
-(./codes/matrixmul.cpp [40]) (./codes/matrixmul.cpp [41])
-(./codes/matrixmul.cpp [42]) (./codes/matrixmulforkremlin.cpp [43]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [44]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [45]
+) (./codes/matrixmul.cpp [40])
+(./codes/matrixmul.cpp [41]) (./codes/matrixmul.cpp [42])
+(./codes/matrixmul.cpp [43]) (./codes/matrixmul.cpp [44])
+(./codes/matrixmulforkremlin.cpp [45]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [46]
@@ -1282,51 +1411,60 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [49]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [50])
-(./codes/onMultKremlin.txt) (./codes/onMultLineKremlin.txt [51])) [52]
+ [50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [51]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [52])
+(./codes/onMultKremlin.txt) (./codes/onMultLineKremlin.txt [53]
+
+Package lineno Warning: Linenumber reference failed, 
+(lineno)                rerun to get it right.
+
+)) [54]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 183.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 183.
-
-(./01-mieic-en.aux (./02-abstract_en.aux) (./03-acknows_en.aux) (./04-quote.aux
-) (./05-abbrevs_en.aux) (./06-intro.aux) (./07-sota_chapter_1.aux)
-(./07-sota_chapter_2.aux) (./08-methodology.aux)
+ (./01-mieic-en.aux (./02-abstract_en.aux) (./03-acknows_en.aux)
+(./04-quote.aux) (./05-abbrevs_en.aux) (./06-intro.aux)
+(./07-sota_chapter_1.aux) (./07-sota_chapter_2.aux) (./08-methodology.aux)
 (./09-results_and_discussion.aux) (./10-conclusion.aux) (./11-appendix1.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 183.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 183.
 Package rerunfilecheck Info: File `01-mieic-en.out' has not changed.
-(rerunfilecheck)             Checksum: 10525ED5028EEE80ACFB58CCB25E6BDC;4820.
+(rerunfilecheck)             Checksum: E48E80B10D491B64C9FADB698139529A;5105.
 Package rerunfilecheck Info: File `01-mieic-en.brf' has not changed.
-(rerunfilecheck)             Checksum: 8B1FDFA9155600F32BEB2C9CA8B116BF;796.
+(rerunfilecheck)             Checksum: 0F009572FFFEF9C48A558274294AB0D0;1085.
 
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 183.
  ) 
 Here is how much of TeX's memory you used:
- 12105 strings out of 492995
- 178050 string characters out of 6136402
- 537997 words of memory out of 5000000
- 14337 multiletter control sequences out of 15000+600000
- 77232 words of font info for 93 fonts, out of 8000000 for 9000
+ 12209 strings out of 492995
+ 179436 string characters out of 6136402
+ 538778 words of memory out of 5000000
+ 14406 multiletter control sequences out of 15000+600000
+ 78010 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,12n,67p,1300b,1190s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,12n,67p,1300b,1141s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2017/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/courie
-r/ucrr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c
-:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2017/tex
-mf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2017/texmf-dist/fonts/type
-1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a
-.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on 01-mieic-en.pdf (72 pages, 839033 bytes).
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2017/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb><c:/texlive/2017/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmsy8.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/courier/ucrr8a.
+pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb><c:/texlive
+/2017/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2017/texmf-dist/fo
+nts/type1/urw/times/utmb8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/time
+s/utmb8a.pfb><c:/texlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/t
+exlive/2017/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2017/texmf-
+dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on 01-mieic-en.pdf (74 pages, 933403 bytes).
 PDF statistics:
- 1857 PDF objects out of 2073 (max. 8388607)
- 1719 compressed objects within 18 object streams
- 975 named destinations out of 1000 (max. 500000)
- 595 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1951 PDF objects out of 2073 (max. 8388607)
+ 1804 compressed objects within 19 object streams
+ 1005 named destinations out of 1200 (max. 500000)
+ 637 words of extra memory for PDF output out of 10000 (max. 10000000)
 

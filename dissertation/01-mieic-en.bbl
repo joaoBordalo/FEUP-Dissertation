@@ -1,11 +1,22 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{GJL{\etalchar{+}}12}
+\begin{thebibliography}{SPTK09}
 
 \bibitem[Dat08]{Datta2008}
 {Stencil computation optimization and auto-tuning on state-of-the-art multicore
   architectures}.
 \newblock {\em 2008 SC - International Conference for High Performance
   Computing, Networking, Storage and Analysis, SC 2008}, 2008.
+
+\bibitem[FSH04]{Fatahalian2004}
+K~Fatahalian, J~Sugerman, and P~Hanrahan.
+\newblock {Understanding the Efficiency of GPU Algorithms for Matrix-Matrix
+  Multiplication}.
+\newblock pages 133--137, 2004.
+
+\bibitem[GG08]{Goto2008}
+Kazushige Goto and Robert A V A N D~E Geijn.
+\newblock {Anatomy of High-Performance Matrix Multiplication}.
+\newblock 34(3), 2008.
 
 \bibitem[GJ]{Saturnino}
 Saturnino Garcia~Jr.
@@ -42,6 +53,10 @@ kremlin: like gprof but for parallelization.
 Changmin Lee and Won~W Ro.
 \newblock {for Parallel Processing on CPU / GPU Hybrids}.
 
+\bibitem[LWR]{Lam}
+S~Lam, E~Wolf, and E~Rothberg.
+\newblock {The Cache Performance of Blocked}.
+
 \bibitem[Nc98]{Nc1998}
 S~Ilicon G Raphics~I Nc.
 \newblock {OpenMP : An Industry-}.
@@ -62,6 +77,12 @@ Jie Shen.
 \newblock {\em {Efficient High Performance Computing on Heterogeneous
   Platforms}}.
 
+\bibitem[SPTK09]{Schaefer2009}
+Christoph~A Schaefer, Victor Pankratius, Walter~F Tichy, and D~Karlsruhe.
+\newblock {Atune-IL : An Instrumentation Language for Auto-Tuning Parallel
+  Applications Atune-IL}.
+\newblock 2009.
+
 \bibitem[Sta]{StartPU}
 {\em {StarPU Handbook}}.
 
@@ -69,5 +90,10 @@ Jie Shen.
 Michael~Bedford Taylor.
 \newblock {Kismet : Parallel Speedup Estimates for Serial Programs}.
 \newblock pages 519--536.
+
+\bibitem[YZ05]{Yuster2005}
+Raphael Yuster and U~R~I Zwick.
+\newblock {Fast Sparse Matrix Multiplication}.
+\newblock 1(1):2--13, 2005.
 
 \end{thebibliography}

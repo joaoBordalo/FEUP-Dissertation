@@ -52,7 +52,7 @@ Great advances have been made in the code parallelization. However, currently th
 
 Since this practice is very costly, although grants great results at performance levels, this field has been developing ways to have results less costly, mostly in effort and time-consuming. These developments created tools to help programmers develop parallelized code, using OpenMP directives, or software tools which recommend possible parallelized regions and its theoretical speed up gain, with Kremlin, or even a way to estimate how much can a program be parallelized, with Kismet software.~\cite{Saturnino}
 
-The following software tools that will be presented have, as its base support, OpenMP directives to help in parallelizing code, or at least, to measure performance.
+The following software tools or instrument languages that will be presented have, as its base support, OpenMP directives to help in parallelizing code, or at least, to measure performance, excluding the last one, ATuner-IL.
 
 \subsection{OpenMP}
 OpenMP was designed to be a flexible standard, easily implemented across different platforms. the main objectives are: control structure, the data environment, synchronization, and the runtime library. 
@@ -77,10 +77,31 @@ Kismet performs dynamic program analysis on an unmodified serial version of a pr
 In order to estimate the parallel performance of a serial program, Kismet uses a parallel execution time model. Kismet's parallel execution time model is based on the major components that affect parallel performance, including the amount of parallelism available, the serial execution time of the program, parallelization platform overheads, synchronization and memory system effects which contribute in some cases to super-linear speedups.
 
 
-%\subsection{Atune-IL}
+\subsection{Atune-IL}
+
+Atune-IL is a general instrument language that helps finding the best values to tune parallel applications. It is based on a language-independent \#pragma annotations that are inserted into the code of an existing parallel application~\cite{Schaefer2009}. 
+
+Atune-IL is based on the assumption that programmers want to change the values of a variable between subsequent tuning runs in order to observe the relative performance impact. The Atune-IL purpose is to help automating this process by allowing programmers manually defining the tuning variables.
+
+Firstly, in order to define those variables,and everything else, all Atune-IL statements must be preceded by the \#pragma atune prefix. Defining variables is not the only thing that Atune-IL can do. This is what Atune-IL can define:
+
+\begin{itemize}
+	\item \textbf{Defining Numeric Parameters}
+	
+Considering that the tuning variable is the number of threads, numThreads, to let the auto-tuner vary this variable, the programmer adds a \#pragma annotation after the variable, followed by SETVAR numThreads to mark it as tunable. Using TYPE int, the domain of trial values is constrained to integers. The value range is defined by VALUES 2-16 STEP 2, implying that numThreads will be set to the values 2,4,… ,16.
+	
+	\item \textbf{Defining Architectural Variants}
+
+A powerful feature of Atune-IL is that the TYPE of values in a SETVAR statement need not be numeric. Assuming that this program implements a sorting routine in a generic way, we can go to the point where the employed sorting algorithm is first instantiated and insert an annotation with TYPE generic; this allows us to include host language code for the creation of each algorithm instance. While the auto-tuner just sees two options that can be tried out in different tuning runs,	it will actually try out two architectural variants of the program
+	
+	\item \textbf{Additional Support for the Optimization} 
+
+The SETVAR keyword has additional options that were not mentioned yet. A value in the specified interval may be defined as the START value that is tried out first. This is useful when a variable that controls the number of threads should be tried out first with the number of available hardware threads.A WEIGHT number may quantify the importance of the annotated variable for the overall optimization, and the SCALE nominal or SCALE ordinal keyword may inform Atune that this variable has nominal or ordinal scale. With this information, the optimizer may treat such variables in a different way
+	
+\end{itemize}
 
 \section{Overview}
 
-As mentioned before, the previously presented software tools, for both cases (using computers' heterogeneous components and using code parallelization) have their base support even being a programming language, for OpenCL, or a set of compile directives, for OpenMP. Those software tools have improved applications performance somehow, which is already good. However, looking as a software that can do everything on its own, with the minimum programmer's input, in other words, that can do things almost automatically, none of them can make it. The only software tool that is close to that automation is Kremlin because it gives what a developer should do in their code in order to increase its efficiency and performance.
+As mentioned before, the previously presented software tools, for both cases (using computers' heterogeneous components and using code parallelization) have their base support even being a programming language, for OpenCL, or a set of compile directives, for OpenMP, excluding Atune-IL. Those software tools have improved applications performance somehow, which is already good. However, looking as a software that can do everything on its own, with the minimum programmer's input, in other words, that can do things almost automatically, none of them can make it. The only software tool that is close to that automation is Kremlin because it gives what a developer should do in their code in order to increase its efficiency and performance.
 
 Both approaches, using computers' heterogeneous components and using code parallelization, have the role to answer the state of the art premise: "achieving the highest processing power".  
